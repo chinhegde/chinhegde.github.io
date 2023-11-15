@@ -3,49 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Chinmayi Hegde - Portfolio</title>
+    <link rel="stylesheet" href="static/style.css">
+    <title>Chinmayi Hegde - Data Scientist</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Chinmayi Hegde</h1>
-            <p>Data Scientist</p>
-        </div>
-    </header>
 
-    <section class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am a graduate student at San Jose State University with a passion for Data Science. I have extensive experience designing
-                machine learning solutions from ETL pipelines, algorithms, databases, and websites, with a track record of successful projects in
-                cloud-based data science and software development.</p>
-        </div>
-    </section>
-
-    <section class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <!-- <img src="images/project1.jpg" alt="Project 1"> -->
-                <h3>Project 1</h3>
-                <p>Description of Project 1.</p>
+    <div class="container">
+        <div class="left-panel">
+            <div class="profile">
+                <!-- <img src="profile-picture.jpg" alt="Profile Picture"> -->
+                <h1>Chinmayi Hegde</h1>
+                <p>Data Scientist</p>
             </div>
-            <!-- Add more projects as needed -->
+            <div class="social-links">
+                <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/yourinstagram" target="_blank">Instagram</a>
+            </div>
+            <div class="scroll-buttons">
+                <button onclick="scrollToSection('education')">Education</button>
+                <button onclick="scrollToSection('work-experience')">Work Experience</button>
+                <button onclick="scrollToSection('projects')">Projects</button>
+            </div>
         </div>
-    </section>
 
-    <section class="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out to me. Email: chinmayilokeshwar.hegde@sjsu.edu</p>
-        </div>
-    </section>
+        <div class="right-panel">
+            <!-- Blank space at the top -->
+            <div class="blank-space"></div>
 
-    <!-- <footer>
-        <div class="container">
-            <p>&copy; 2023 Your Name. All rights reserved.</p>
+            <!-- Work Experience Box -->
+            <div class="info-box">
+                <h2>Work Experience</h2>
+                <p>Your work experience details go here.</p>
+            </div>
+
+            <!-- Projects Box -->
+            <div class="info-box">
+                <h2>Projects</h2>
+                <p>Your project details go here.</p>
+            </div>
+
+            <!-- Summary Box -->
+            <div class="info-box">
+                <h2>Summary</h2>
+                <p>Your summary goes here.</p>
+            </div>
         </div>
-    </footer> -->
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
