@@ -2,6 +2,8 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #fff; 
+    color: #000; 
 }
 
 .container {
@@ -11,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #3498db; 
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -32,8 +34,12 @@ header h1 {
     height: auto;
 }
 
+h2, h3 {
+    color: #3498db;
+}
+
 footer {
-    background-color: #333;
+    background-color: #3498db;
     color: #fff;
     text-align: center;
     padding: 10px 0;
