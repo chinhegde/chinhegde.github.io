@@ -178,3 +178,173 @@ a:hover {
 .home-button:active {
  padding-bottom: 10px;
 }
+
+
+
+
+.project-card {
+  position: relative;
+  width: 11.875em;
+  height: 16.5em;
+  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 120ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 0.5em;
+  padding-bottom: 3.4em;
+}
+
+.project-card::after {
+  content: "Add to Cart";
+  padding-top: 1.25em;
+  padding-left: 1.25em;
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+  background: #00AC7C;
+  color: #fff;
+  height: 2.5em;
+  width: 90%;
+  transition: all 80ms;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+.project-card .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 1.875em;
+  font-weight: 400;
+  color: #000;
+}
+
+.project-card .price {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 0.625em;
+  color: #000;
+}
+
+.project-card:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+.project-card:active {
+  transform: scale(0.98);
+}
+
+.project-card:active::after {
+  content: "Added !";
+  height: 3.125em;
+}
+
+.text {
+  max-width: 55px;
+}
+
+.image {
+  background: rgb(241, 241, 241);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+
+
+
+
+.bar-card {
+  background-color: #e4e4e4;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px #c4c4c4,
+              -10px -10px 20px #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 4px;
+}
+
+.button {
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 5px 5px 5px #c4c4c4,
+              inset -5px -5px 5px #ffffff;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 3px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  box-shadow: none;
+}
+
+.bar-card .Explore {
+  color: #3035cb;
+}
+
+.bar-card .Explore:hover {
+  background-color: #3035cb;
+  color: #e4e4e4;
+}
+
+.card .Explore svg {
+  fill: #3035cb;
+}
+
+.bar-card .Explore:hover svg {
+  fill: #e4e4e4;
+}
+
+.bar-card .Post {
+  color: #333;
+}
+
+.bar-card .Post:hover {
+  background-color: #333;
+  color: #e4e4e4;
+}
+
+.bar-card .Post svg {
+  fill: #333;
+}
+
+.bar-card .Post:hover svg {
+  fill: #e4e4e4;
+}
+
+.bar-card .Chat {
+  color: #b82323;
+}
+
+.bar-card .Chat:hover {
+  background-color: #b82323;
+  color: #e4e4e4;
+}
+
+.bar-card .Chat svg {
+  fill: #b82323;
+}
+
+.bar-card .Chat:hover svg {
+  fill: #e4e4e4;
+}
