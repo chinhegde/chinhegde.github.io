@@ -47,14 +47,6 @@ body {
     color: white;
     cursor: pointer;
 }
-#page {
-    width: 100%;
-}
-
-#menuleftcontent {
-    float: left;
-    width: 25%;
-}
 
 
 .right-panel {
