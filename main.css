@@ -264,13 +264,6 @@ a:hover {
 
 #resume-button:hover::after {
     content: "The work experience section is more detailed.";
-    display: block;
-    position: absolute;
-    background-color: #37718E;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
 }
 
 
