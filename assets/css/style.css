@@ -313,7 +313,7 @@ h3 {
 } */
 
 #intro.section {
-  background: #a7ffeb repeat;
+  background: #CDE6F5 repeat;
   position: relative;
 }
 
@@ -349,7 +349,7 @@ h3 {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.0);
   height: 100%;
   left: 0;
   position: absolute;
