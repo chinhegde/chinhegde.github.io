@@ -546,7 +546,7 @@ small {
 
 .teal {
   background-color: #2274A5 !important;
-  color: #FCAB64 !important;
+  /* color: #FCAB64 !important; */
 }
 
 @media (min-width: 1200px) {
