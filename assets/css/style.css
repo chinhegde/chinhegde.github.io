@@ -539,25 +539,14 @@ small {
   color: #666 !important;
 }
 
-/* main .teal-text */
-
 .teal-text {
   color: #2274A5 !important;
 }
 
-/* .teal-text {
-  color: #0b5e86 !important;
-} */
-
-/* .teal */
 
 .teal {
   background-color: #2274A5 !important;
 }
-
-/* .teal {
-  background-color: #00695c !important;
-} */
 
 @media (min-width: 1200px) {
   #experience .container {
@@ -595,7 +584,7 @@ small {
     position: absolute;
   }
   nav a.button-collapse, nav a.button-collapse i {
-    color: #009688;
+    color: #2274A5;
     height: 56px;
     line-height: 56px;
   }
