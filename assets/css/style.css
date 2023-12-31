@@ -472,6 +472,7 @@ a.hoverline:hover {
 .card-image a{
   text-transform: capitalize;
   font-size: 13px;
+  color: #164367;
   /* padding: 2px; */
 }
 
