@@ -471,7 +471,7 @@ a.hoverline:hover {
 .card-image a{
   text-transform: capitalize;
   font-size: 13px;
-  padding: 2px;
+  /* padding: 2px; */
 }
 
 #experience .card-content .row {
