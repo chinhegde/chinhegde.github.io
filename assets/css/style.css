@@ -494,7 +494,7 @@ a.hoverline:hover {
   padding: 30px 0;
 }
 
-.card-image img{
+.card-image img a{
   text-transform: capitalize;
 }
 
