@@ -707,3 +707,7 @@ small {
   box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
   outline: none;
 }
+
+.brown-text.light {
+  font-size: 1.7rem;
+}
