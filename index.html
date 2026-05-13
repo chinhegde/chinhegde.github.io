@@ -1,848 +1,1046 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
-  <!-- End Google Tag Manager -->
-
-  <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-  <!-- Custom Styles-->
-  <link rel="stylesheet" href="/assets/css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Chinmayi Hegde — Data Scientist specializing in production ML, responsible AI, and LLM systems." />
+  <meta property="og:title" content="Chinmayi Hegde | Data Scientist" />
+  <meta property="og:description" content="Production ML, responsible AI, and LLM systems — with a growing focus on product analytics." />
+  <meta property="og:url" content="https://chinhegde.github.io/" />
   <title>Chinmayi Hegde | Data Scientist</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-    gtag('config', 'UA-126939217-2');
-  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  <!-- Open Graph-->
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Chinmayi Hegde | Data Scientist" />
-  <meta property="og:description" content="Data Scientist" />
-  <meta property="og:url" content="https://chinhegde.github.io/" />
-  <meta property="og:site_name" content="Chinmayi Hegde | Data Scientist" />
-  <meta property="article:publisher" content="https://chinhegde.github.io/" />
-  <meta name="author" content="Chinmayi Hegde" />
-  <meta name="description" content="Data Scientist with a passion for cloud-based solutions." />
-  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="/assets/img/favicon/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
-  <meta name="robots" content="index, follow" />
-  <!-- Google Site Verification for indexing -->
-  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
+    :root {
+      --bg:         #EEE9E0;
+      --bg-dark:    #E6E0D6;
+      --bg-deeper:  #DDD7CC;
+      --ink:        #1A1814;
+      --ink-mid:    #3D3A34;
+      --ink-light:  #7A756C;
+      --violet:     #593ED0;
+      --violet-dim: rgba(89,62,208,0.09);
+      --violet-mid: rgba(89,62,208,0.18);
+      --border:     rgba(26,24,20,0.1);
+      --border-mid: rgba(26,24,20,0.18);
+
+      --font-display: 'Cormorant Garamond', serif;
+      --font-body:    'DM Sans', sans-serif;
+      --font-mono:    'DM Mono', monospace;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 56px;
+      height: 68px;
+      background: rgba(238,233,224,0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-name {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .nav-name span { color: var(--violet); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      font-weight: 500;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--ink); }
+
+    .nav-resume {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      font-weight: 500;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: #fff !important;
+      background: var(--violet);
+      padding: 9px 20px;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .nav-resume:hover { opacity: 0.85; }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 140px 56px 88px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-watermark {
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-52%);
+      font-family: var(--font-display);
+      font-size: clamp(180px, 24vw, 380px);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1;
+      color: rgba(26,24,20,0.045);
+      pointer-events: none;
+      user-select: none;
+      white-space: nowrap;
+    }
+
+    .hero-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--violet);
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 28px;
+      height: 1px;
+      background: var(--violet);
+    }
+
+    h1.hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(72px, 10vw, 152px);
+      font-weight: 300;
+      line-height: 0.9;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 40px;
+    }
+    h1.hero-title em {
+      font-style: italic;
+      color: var(--violet);
+    }
+
+    .hero-sub {
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--ink-mid);
+      max-width: 520px;
+      line-height: 1.65;
+      margin-bottom: 52px;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: #fff;
+      background: var(--violet);
+      padding: 14px 28px;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .btn-primary:hover { opacity: 0.85; }
+
+    .btn-ghost {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--ink);
+      border: 1px solid var(--border-mid);
+      padding: 14px 28px;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: border-color 0.2s;
+    }
+    .btn-ghost:hover { border-color: var(--ink-mid); }
+
+    .hero-socials {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .icon-link {
+      width: 42px; height: 42px;
+      border: 1px solid var(--border-mid);
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: var(--ink-light);
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .icon-link:hover { color: var(--ink); border-color: var(--ink-mid); }
+    .icon-link svg { width: 17px; height: 17px; fill: currentColor; }
+
+    /* ── SECTION SCAFFOLDING ── */
+    section { padding: 108px 56px; }
+
+    .section-label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--violet);
+      margin-bottom: 52px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1;
+      max-width: 64px;
+      height: 1px;
+      background: var(--border-mid);
+    }
+
+    h2.section-title {
+      font-family: var(--font-display);
+      font-size: clamp(52px, 6.5vw, 96px);
+      font-weight: 300;
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 72px;
+    }
+    h2.section-title em { font-style: italic; color: var(--violet); }
+
+    /* ── WHAT I DO ── */
+    #what {
+      background: var(--bg-dark);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .what-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 1px solid var(--border-mid);
+    }
+
+    .what-card {
+      padding: 52px 44px;
+      border-right: 1px solid var(--border-mid);
+      transition: background 0.3s;
+    }
+    .what-card:last-child { border-right: none; }
+    .what-card:hover { background: var(--bg-deeper); }
+
+    .what-num {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      color: var(--violet);
+      margin-bottom: 28px;
+    }
+
+    .what-card h3 {
+      font-family: var(--font-display);
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 1.1;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+
+    .what-card p {
+      font-size: 14.5px;
+      font-weight: 300;
+      color: var(--ink-mid);
+      line-height: 1.75;
+    }
+
+    .what-tools {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      color: var(--violet);
+      background: var(--violet-dim);
+      padding: 4px 10px;
+      border-radius: 2px;
+    }
+
+    /* ── EXPERIENCE ── */
+    #experience { max-width: 1180px; margin: 0 auto; }
+
+    .exp-item {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 0 72px;
+      padding: 56px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .exp-item:first-of-type { border-top: 1px solid var(--border); }
+
+    .exp-meta { padding-top: 6px; }
+
+    .exp-date {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: var(--ink-light);
+      letter-spacing: 0.04em;
+      line-height: 1.7;
+    }
+
+    .exp-company-stamp {
+      margin-top: 20px;
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 20px;
+      color: var(--ink);
+      opacity: 0.22;
+      letter-spacing: 0.02em;
+    }
+
+    .exp-role {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 3.5vw, 44px);
+      font-weight: 300;
+      line-height: 1;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+
+    .exp-company-label {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--violet);
+      margin-bottom: 28px;
+    }
+
+    .exp-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .exp-bullets li {
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--ink-mid);
+      line-height: 1.7;
+      padding-left: 22px;
+      position: relative;
+    }
+    .exp-bullets li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: var(--violet);
+    }
+
+    .exp-tags {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    /* ── PROJECTS ── */
+    #projects {
+      background: var(--bg-dark);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .projects-featured {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 1px solid var(--border-mid);
+    }
+
+    .project-card {
+      padding: 52px 48px;
+      border-right: 1px solid var(--border-mid);
+      display: flex;
+      flex-direction: column;
+      transition: background 0.3s;
+    }
+    .project-card:last-child { border-right: none; }
+    .project-card:hover { background: var(--bg-deeper); }
+
+    .project-badge {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--violet);
+      background: var(--violet-dim);
+      padding: 4px 12px;
+      border-radius: 2px;
+      display: inline-block;
+      margin-bottom: 28px;
+      align-self: flex-start;
+    }
+
+    .project-num {
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      color: var(--ink-light);
+      letter-spacing: 0.1em;
+      margin-bottom: 20px;
+    }
+
+    .project-card h3 {
+      font-family: var(--font-display);
+      font-size: clamp(26px, 2.8vw, 38px);
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--ink);
+      margin-bottom: 18px;
+    }
+
+    .project-card p {
+      font-size: 14.5px;
+      font-weight: 300;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      flex: 1;
+    }
+
+    .project-tags {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .project-links { margin-top: 28px; }
+
+    .project-link {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--violet);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: opacity 0.2s;
+    }
+    .project-link:hover { opacity: 0.65; }
+    .project-link svg { width: 13px; height: 13px; fill: currentColor; }
+
+    .project-link-muted {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      letter-spacing: 0.08em;
+      color: var(--ink-light);
+    }
+
+    .more-projects-toggle {
+      background: none;
+      border: 1px solid var(--border-mid);
+      color: var(--ink);
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      padding: 15px 32px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 28px;
+      border-radius: 2px;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .more-projects-toggle:hover { border-color: var(--ink-mid); background: var(--bg-deeper); }
+    .more-projects-toggle .chevron { transition: transform 0.3s; display: inline-block; }
+    .more-projects-toggle.open .chevron { transform: rotate(180deg); }
+
+    .projects-more {
+      display: none;
+      grid-template-columns: repeat(3, 1fr);
+      border: 1px solid var(--border-mid);
+      border-top: none;
+    }
+    .projects-more.open { display: grid; }
+
+    .project-card.small { padding: 40px 36px; }
+    .project-card.small h3 { font-size: 24px; }
+    .project-card.small:nth-child(3) { border-right: none; }
+
+    /* ── EDUCATION ── */
+    #education { max-width: 1180px; margin: 0 auto; }
+
+    .edu-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+
+    .edu-card {
+      border: 1px solid var(--border-mid);
+      padding: 44px;
+      border-radius: 2px;
+      transition: border-color 0.3s, background 0.3s;
+    }
+    .edu-card:hover { border-color: var(--violet); background: var(--violet-dim); }
+
+    .edu-degree {
+      font-family: var(--font-display);
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+
+    .edu-school {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--violet);
+      margin-bottom: 6px;
+    }
+
+    .edu-date {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: var(--ink-light);
+      letter-spacing: 0.04em;
+    }
+
+    /* ── CONTACT ── */
+    #contact {
+      padding: 120px 56px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    #contact .section-label {
+      justify-content: center;
+    }
+    #contact .section-label::after { display: none; }
+
+    .contact-title {
+      font-family: var(--font-display);
+      font-size: clamp(64px, 9vw, 120px);
+      font-weight: 300;
+      line-height: 0.92;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+    .contact-title em { font-style: italic; color: var(--violet); }
+
+    #contact > p {
+      font-size: 17px;
+      font-weight: 300;
+      color: var(--ink-mid);
+      margin-bottom: 52px;
+      line-height: 1.65;
+    }
+
+    .contact-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .contact-link {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--ink-mid);
+      text-decoration: none;
+      border: 1px solid var(--border-mid);
+      padding: 14px 28px;
+      border-radius: 2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .contact-link:hover { color: var(--ink); border-color: var(--ink-mid); }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 24px 56px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    footer p {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: var(--ink-light);
+      letter-spacing: 0.04em;
+    }
+
+    /* ── HAMBURGER / MOBILE MENU ── */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 1.5px;
+      background: var(--ink);
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 68px; left: 0; right: 0;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 28px 32px;
+      flex-direction: column;
+      gap: 22px;
+      z-index: 99;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--ink-mid);
+      text-decoration: none;
+    }
+
+    /* ── FADE IN ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 960px) {
+      nav { padding: 0 28px; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+
+      #hero { padding: 108px 28px 72px; }
+      section { padding: 80px 28px; }
+      #experience, #education { padding-left: 28px; padding-right: 28px; }
+      #contact { padding: 80px 28px; }
+      footer { padding: 20px 28px; flex-direction: column; gap: 6px; text-align: center; }
+
+      .what-grid { grid-template-columns: 1fr; }
+      .what-card { border-right: none; border-bottom: 1px solid var(--border-mid); }
+      .what-card:last-child { border-bottom: none; }
+
+      .projects-featured { grid-template-columns: 1fr; }
+      .project-card { border-right: none; border-bottom: 1px solid var(--border-mid); }
+      .project-card:last-child { border-bottom: none; }
+      .projects-more { grid-template-columns: 1fr; }
+      .project-card.small { border-right: none; border-bottom: 1px solid var(--border-mid); }
+      .project-card.small:last-child { border-bottom: none; }
+
+      .exp-item { grid-template-columns: 1fr; gap: 4px; }
+      .exp-meta { display: flex; gap: 20px; align-items: baseline; padding-bottom: 12px; }
+      .exp-company-stamp { display: none; }
+
+      .edu-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
-
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
 
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="/assets/img/passport-new.jpg" class="circle img-responsive profile-pic" alt="avatar">
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-name">CH<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#what">What I Do</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="/assets/resume.pdf" target="_blank" class="nav-resume">Resume ↗</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#what" onclick="closeMobile()">What I Do</a>
+    <a href="#experience" onclick="closeMobile()">Experience</a>
+    <a href="#projects" onclick="closeMobile()">Projects</a>
+    <a href="#education" onclick="closeMobile()">Education</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+    <a href="/assets/resume.pdf" target="_blank">Resume ↗</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-watermark" aria-hidden="true">Data</div>
+    <div class="hero-eyebrow">Based in the US</div>
+    <h1 class="hero-title">Chinmayi<br><em>Hegde.</em></h1>
+    <p class="hero-sub">Data Scientist. Production ML, responsible AI, and LLM systems — with a growing focus on product analytics and user-facing impact.</p>
+    <div class="hero-actions">
+      <a href="/assets/resume.pdf" target="_blank" class="btn-primary">Download Resume</a>
+      <a href="#experience" class="btn-ghost">View Work</a>
+      <div class="hero-socials">
+        <a href="https://linkedin.com/in/chinmayi-hegde" target="_blank" class="icon-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
         </a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <!--
-        ICONS:
-        mdi-action-assessment
-        mdi-social-poll
-        mdi-av-equalizer
-        -->
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- mdi-av-web small
-             mdi-av-my-library-books small-->
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-
-     
-      
-      <li class="bold">
-        <!--
-        ICONS:
-        -->
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- 
-        1. mdi-communication-contacts
-        2. mdi-content-mail
-        3. mdi-communication-email
-        -->
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        1. mdi-action-description
-        2. mdi-file-folder
-        3. mdi-file-folder-open
-        4. mdi-file-attachment
-        5. mdi-file-folder-shared
-        -->
-        <a aria-label="Open Chinmayi's resume in a new tab" href="#skills" target="_blank"
-        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Chinmayi Hegde</a><span class="black-text">Data Scientist</span>
+        <a href="https://github.com/chinhegde" target="_blank" class="icon-link" aria-label="GitHub">
+          <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+      </div>
     </div>
-  </nav>
+  </section>
 
-  <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-     
-
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-      <!-- <li class="bold">
-        <a aria-label="Open Chinmayi's Resume in a new tab"
-          href="https://bit.ly/resume_chinhegde" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
-      </li> -->
-    </ul>
-  </nav>
-
-  <!-- Main Content-->
-  <main>
-    <!-- First Section: Heading lines and image -->
-    <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi, I'm <span class="teal">Chinmayi Hegde.</span></h2>
-              <h5 style="color:#fff">A <span class="typing" style="font-weight: 500; color:#FCAB64"></span></h5>
-              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <h5>Transforming patterns into cutting-edge solutions, one machine learning model at a time.</h5>
-            </div>
-            <div class="social">
-              <a href="http://linkedin.com/in/chinmayi-hegde" target="_blank">
-                <button class="icon-btn linkedin">
-                  <i class="fa fa-linkedin"></i>
-                </button>
-              </a>
-              <a href="https://github.com/chinhegde/" target="_blank">
-                <button class="icon-btn github">
-                  <i class="fa fa-github"></i>
-                </button>
-              </a>
-
-              <!-- <a href="http://linkedin.com/in/chinmayi-hegde" target="_blank">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-
-                  </span>
-              </a> -->
-            </div>
-            <div class='buttons'>
-              <a href="#about" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
-            </div>
-          </div>
+  <!-- WHAT I DO -->
+  <section id="what">
+    <div class="section-label">What I Do</div>
+    <div class="what-grid">
+      <div class="what-card fade-in">
+        <div class="what-num">01</div>
+        <h3>Responsible AI & Fairness</h3>
+        <p>I audit and test ML models for bias across protected attributes — employment, fraud, and beyond. Models I've reviewed have been sent back for remediation. I build the frameworks that make AI accountable before it ships.</p>
+        <div class="what-tools">
+          <span class="tag">Fairlearn</span>
+          <span class="tag">SHAP</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">AI Governance</span>
         </div>
       </div>
-    </section>
-
-    <!-- Second Section: About -->
-    <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
-      <div class="container flow-text" id = "about-description">
-        <!-- <blockquote>
-          <h2>
-            A Data Scientist with a passion for cloud-based ML solutions.
-
-          </h2>
-        </blockquote> -->        
-        <p>
-          I am a <b>Masters in Computer Science</b> student at San Jose State University, <b>graduating in May 2024</b>. I enjoy problem-solving and coding and I bring my 100% to the work I do.   
-          I have over 2.5 years of professional experience as a data scientist which helped me strengthen my expertise in <b>Python, SQL, and Google Cloud Platform</b>. I am passionate about building solutions that solve real-world problems impacting millions of users.
-        </p>
-        <p>
-          I bring expertise in Natural Language Processing, Sentiment Analysis, Recommendation System, Audience Development, Image and Video processing
-        </p>
-          
-        <p>
-          <b>Looking for an opportunity to work</b> in a challenging position combining my skills in Data Science, which provides professional development, interesting experiences and personal growth.
-        </p>
-      </div>
-    </section>
-
-
-
-    <!-- Fifth Section: Skills -->
-    <section id="skills" class="section scrollspy">
-      <h3 class="page-title white-text teal">Skills</h3>
-      <div class="container">
-         <!-- certifications -->
-         <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Certifications</h4>
-            
-            <div class="row text-left">
-              <div class="container">
-                <div class="row">
-
-                  <div class="col s6 m2 l2">
-                    <div class="card">
-                      <div class="card-image">
-                        <a href = "https://www.coursera.org/account/accomplishments/verify/RYHRBFB5UXNT" target="_blank"><img src="/assets/img/certifications/ml_stanford.png">Machine Learning</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col s6 m2 l2">
-                    <div class="card">
-                      <div class="card-image">
-                        <a href = "https://www.coursera.org/verify/G8LPC82MWYQR" target="_blank"><img src="/assets/img/certifications/k8s__workloads.png">Architecting with Google Kubernetes Engine: Workloads</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col s6 m2 l2">
-                    <div class="card">
-                      <div class="card-image">
-                        <a href = "https://www.linkedin.com/learning/certificates/2127da3c4117444be754d0fd12a1b95c92f0e354232247ef9c2d8d470408cdf1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bt1dsHVg1QSi1IkHZbBV2IQ%3D%3D" target="_blank"><img src="/assets/img/certifications/version_control.png">Version Control with Git</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col s6 m2 l2">
-                    <div class="card">
-                      <div class="card-image">
-                        <a href = "https://www.coursera.org/account/accomplishments/verify/2226EMPQC56C" target="_blank"><img src="/assets/img/certifications/gcp_scaling.png">Elastic Google Cloud Infrastructure: Scaling and Automation</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col s6 m2 l2">
-                    <div class="card">
-                      <div class="card-image">
-                        <a href = "https://www.coursera.org/account/accomplishments/verify/VJ7EZ94HU9PC" target="_blank"><img src="/assets/img/certifications/gcp_coreinfra.png">Google Cloud Fundamentals: Core Infrastructure</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col s6 m2 l2">
-                    <div class="card">
-                      <div class="card-image">
-                        <a href = "https://www.linkedin.com/learning/certificates/939b714db78c9b806545b1b637cec5407fe7be734671299609e75bf44c15ef9d?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bt1dsHVg1QSi1IkHZbBV2IQ%3D%3D" target="_blank"><img src="/assets/img/certifications/data_engineering.png">Data Engineering Foundations</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- <div class="col s6 m2 l2">
-                    <div class="card">
-                      <div class="card-image">
-                        <a href = "https://www.linkedin.com/learning/certificates/fb37c5b192bab5aad27b02fd60c1ffe4357546df0ca1ded4beaecd906fd0c133?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bt1dsHVg1QSi1IkHZbBV2IQ%3D%3D" target="_blank"><img src="/assets/img/certifications/power_bi.png">Power BI Data Dashboards</a>
-                      </div>
-                    </div>
-                  </div> -->
-
-                  <!-- <div class="col s6 m2 l2">
-                    <div class="card">
-                      <div class="card-image">
-                        <a href = "https://www.linkedin.com/learning/certificates/519c6bd0c43ca0cd2b8397ca8b5f25c247e66851af2a63df2f814f2fd0f2f0c3?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bt1dsHVg1QSi1IkHZbBV2IQ%3D%3D" target="_blank"><img src="/assets/img/certifications/databases.png">Advanced Python: Working with Databases</a>
-                      </div>
-                    </div>
-                  </div> -->
-                  
-
-                  <!-- <div class="col s6 m2 l2">
-                    <div class="card">
-                      <div class="card-image">
-                        <a href = "https://www.coursera.org/account/accomplishments/verify/ZQYZN2D6Y9FF" target="_blank"><img src="/assets/img/certifications/meteorjs.png">Meteor.js Development</a>
-                      </div>
-                    </div>
-                  </div> -->
-
-                  <!-- <div class="col s6 m2 l2">
-                    <div class="card">
-                      <div class="card-image">
-                        <a href = "https://www.coursera.org/account/accomplishments/verify/DEQYY9RS5VHA" target="_blank"><img src="/assets/img/certifications/webdesign.png">Responsive Web Design</a>
-                      </div>
-                    </div>
-                  </div> -->                 
-
-                  <!-- <div class="col s6 m2 l2">
-                    <div class="card">
-                      <div class="card-image">
-                        <a href = "https://www.coursera.org/account/accomplishments/verify/QBX4XP4H6D8W" target="_blank"><img src="/assets/img/certifications/gcp_foundation.png">Elastic Google Cloud Infrastructure: Foundation</a>
-                      </div>
-                    </div>
-                  </div> -->
-                  
-                  <!-- <div class="col s6 m2 l2">
-                    <div class="card">
-                      <div class="card-image">
-                        <a href = "https://www.coursera.org/account/accomplishments/verify/9A4AYHA8SS2S" target="_blank"><img src="/assets/img/certifications/gci_coreservices.png">Elastic Google Cloud Infrastructure: Core Services</a>
-                      </div>
-                    </div>
-                  </div> -->
-                  
-                   <!-- <div class="col s6 m2 l2">
-                    <div class="card">
-                      <div class="card-image">
-                        <a href="https://www.coursera.org/verify/N7ESK2S5CR39" target = '_blank'><img src="/assets/img/certifications/k8s_foundations.png">Architecting with Google Kubernetes Engine: Foundations</a>
-                      </div>
-                    </div>
-                  </div> -->
-
-                </div>
-
-                <a href="https://www.linkedin.com/in/chinmayi-hegde/details/certifications/" target="_blank"><button class="button-15" role="button">View all certifications</button></a>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Languages and Databases -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Languages and Databases</h4>
-            <div class="row text-center">
-              <div class="col s6 m2 l3">
-                <img alt="" src="/assets/img/python.png" class="responsive-img" />Python
-              </div>
-              <div class="col s6 m2 l3">
-                <img alt="" src="/assets/img/java.png" class="responsive-img" />Java
-              </div>
-              <div class="col s6 m2 l3">
-                <img alt="" src="/assets/img/r_programming.png" class="responsive-img" />R Programming
-              </div>
-              <div class="col s6 m2 l3">
-                <img alt="" src="/assets/img/html_css.png" class="responsive-img" />HTML5, CSS & JavaScript
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Databases</h4>
-            <div class="row text-center">
-              <div class="col s6 m2 l3">
-                <img alt="" src="/assets/img/sql.png" class="responsive-img" />MySQL
-              </div>
-              <div class="col s6 m2 l3">
-                <img alt="" src="/assets/img/bigquery.png" class="responsive-img" />Google BigQuery
-              </div>
-              <div class="col s6 m2 l3">
-                <img alt="" src="/assets/img/mongodb.png" class="responsive-img" />NoSQL Databases - MongoDB, Cassandra, Neo4j
-              </div>
-              
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Tools & Technologies</h4>
-            <div class="row text-center">
-              <div class="col s6 m2 l3">
-                <img alt="" src="/assets/img/ml_packages.png" class="responsive-img" />NumPy, Pandas, Scikit-Learn, OpenCV
-              </div>
-              <div class="col s6 m2 l3">
-                <img alt="" src="/assets/img/14.png" class="responsive-img" />Keras, Spark, Spacy, TensorFlow
-              </div>
-              <div class="col s6 m2 l3">
-                <img alt="" src="/assets/img/data_visualization.png" class="responsive-img" />Data Visualization - Tableau, Looker, Matplotlib, PowerBI
-              </div>
-              <div class="col s6 m2 l3">
-                <img alt="" src="/assets/img/vertex_ai.png" class="responsive-img" />Vertex AI, Airflow
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Frameworks -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Frameworks and Cloud Technologies</h4>
-            <div class="row text-center">
-              <div class="col s6 m2 l3">
-                <img alt="" src="/assets/img/django.png" class="responsive-img" />Rest API, Django, Flask
-              </div>
-              <div class="col s6 m2 l3">
-                <img alt="" src="/assets/img/gc.png" class="responsive-img" />Google Cloud Platform (GCP)
-              </div>
-              <div class="col s6 m2 l3">
-                <img alt="" src="/assets/img/azure.png" class="responsive-img" />Microsoft Azure
-              </div>
-              <div class="col s6 m2 l3">
-                <img alt="" src="/assets/img/docker.png" class="responsive-img" />Docker
-              </div>
-              <div class="col s6 m2 l3">
-                <img alt="" src="/assets/img/kubernetes.png" class="responsive-img" />Kubernetes
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Other -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Other</h4>
-            <div class="row text-center">
-              <div class="col s6 m2 l3">
-                <img alt="" src="/assets/img/git.png" class="responsive-img" />Git
-              </div>
-              <div class="col s6 m2 l3">
-                <img alt="" src="/assets/img/heroku.png" class="responsive-img" />Heroku, Streamlit
-              </div>
-              <div class="col s6 m2 l3">
-                <img alt="" src="/assets/img/jira.png" class="responsive-img" />Jira
-              </div>
-            </div>
-          </div>
+      <div class="what-card fade-in">
+        <div class="what-num">02</div>
+        <h3>Production ML & LLM Systems</h3>
+        <p>I've led LLM selection for production RAG pipelines, own knowledge base architecture for a live enterprise chatbot, and built agentic AI workflows with LangChain. I close the gap between research and shipping.</p>
+        <div class="what-tools">
+          <span class="tag">LangChain</span>
+          <span class="tag">RAG</span>
+          <span class="tag">Python</span>
+          <span class="tag">Vector DBs</span>
         </div>
       </div>
-    </section>
-
-
-    <!-- Third Section: Experience -->
-    <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text teal">Experience</h3>
-      <div class="container">
-
-        <!-- Latest Experience -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.webmd.com/" target="_blank"><img alt="WebMD logo"
-                    src="/assets/img/WebMD_logo.png" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.webmd.com/" target="_blank"
-                      class="teal-text hoverline">Data Science Intern @ WebMD</a></span>
-                </p>
-              </div>
-            </div>
-            <ul>
-              <!-- <li>Engineered machine learning pipelines for recommendation systems using BigQuery, Python on Vertex AI, and Airflow, to accurately target potential customers</li>
-              <li>Conducted audience development through classification using Vertex AI AutoML, demonstrating proficiency in leveraging machine learning for targeted audience analysis.</li>
-              <li>Implemented clustering and time series forecasting using Python for customer segmentation for targeted marketing campaigns, increasing market penetration by 15%</li>
-              <li>Devised a data extraction solution using GCP’s Generative AI API and Natural Language Processing (NLP) to extract details from SQL BigQuery database of 30k products, resulting in extraction accuracy of 95%, with exploratory analysis on Tableau</li>
-              <li>Executed data quality checks using Google BigQuery, ensuring the integrity and reliability of datasets for robust analysis</li>
-              <li>Produced insightful result dashboards using Tableau</li> -->
-              <li>Time series forecasting, Natural Language Processing (NLP), classification, regression, customer segmentation, Audience development (propensity modeling), ML pipelining</li>
-
-              <li>
-                <b>Tools:</b> Python, Google Cloud Platform - BigQuery, Vertex AI, Vertica, Tableau
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>Jun 2023 - Aug 2023 | New York, USA (Remote)</span>
-          </div>
-        </div>
-
-        
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.ugamsolutions.com/" target="_blank"><img alt="Merkle logo"
-                    src="/assets/img/merkle-logo.png" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.merkle.com/" target="_blank"
-                      class="teal-text hoverline">Data Scientist @ Merkle</a></span>
-                </p>
-              </div>
-            </div>
-            <ul>
-              <li>Time series forecasting, anomaly detection, data analysis, User Acceptance Testing (UAT), Natural Language Processing (NLP)</li>
-              <li>
-                <b>Tools:</b> Python, BigQuery, GCP, Tableau, Airflow, Time Series Analysis, NLP
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>Sep 2020 - July 2022 | Bangalore, India</span>
-          </div>
-        </div>
-
-        <!-- Experience 2 -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <img alt="Mekle logo" src="/assets/img/merkle-logo.png" class="responsive-img center-block" />
-
-              </div>
-
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="#experience" class="teal-text hoverline">Software Developement Intern @ Merkle</a></span>
-                </p>
-              </div>
-            </div>
-            <ul>
-              <li>
-                Delivered a POC solution for logo detection and tracking model with 89% accuracy, using ResNet Keras and Streamlit.
-              </li>
-              <li>
-                Conducted fake review detection for client's brand analytics using Selenium web scraping to gather customer reviews and utilized Natural Language Processing (NLP), neural networks (CNNs) with PySpark for large-scale classification in Python.
-              </li>
-              <li>
-                Received training in R, SQL, GCP + Kubernetes problem analysis, and PySpark, developing skills in data analysis.
-              </li>
-              <li>
-                <b>Tools:</b> Python, OpenCV, Keras, Tensorflow, PyTorch, ML - Image and video processing, text classification
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>Jan 2020 - Mar 2020 | Bangalore, India</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-        <!-- Fourth Section: Projects -->
-        <section id="projects" class="section scrollspy">
-          <h3 class="page-title white-text teal">Projects</h3>
-          <div class="container">
-            <div class="row">
-    
-              <div class="col s12 m6 l4">
-                <div class="card medium">
-                  <div class="card-image waves-effect waves-block waves-light">
-                    <img alt="customer churn" src="/assets/img/projects/customer_churn.png" style="height: 100%; width: 100%" class="activator" />
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title activator teal-text hoverline">Customer Churn Prediction<i
-                        class="mdi-navigation-more-vert right"></i></span>
-                    <p>
-                      Evaluation of 5 ML algorithms for churn prediction
-                    </p>
-                  </div>
-                  <div class="card-reveal">
-
-                    <span class="card-title grey-text"><small>Accomplishments</small><i
-                        class="mdi-navigation-close right"></i></span>
-                    <ul>
-                      <li><b>Language/Tools:</b> Python, Google Colaboratory</li>
-                      <li><b>Packages/Libraries:</b> Pandas, Matplotlib, Scikit-Learn, Keras</li>
-                      <li><b>Algorithms:</b> Classification - SVM, K-Nearest Neighbors, Decision Tree, Naive Bayes</li>
-                      <li>Evaluation on 2 datasets</li>    
-    
-                    </ul>
-                    <div class="card-action">
-                      <a aria-label="Visit " href="https://chinmayih.wordpress.com/2023/12/30/unraveling-customer-churn-with-ml/" target="_blank" data-position="top"
-                        data-tooltip="Read More."
-                        class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                          class="fa fa-external-link"></i></a>
-                      <a aria-label="Visit the GitHub repo for  project" href="https://github.com/chinhegde/Customer-Churn-Prediction"
-                        target="_blank" data-position="top" data-tooltip="View Source"
-                        class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                          class="fa fa-github"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="col s12 m6 l4">
-                <div class="card medium">
-                  <div class="card-image waves-effect waves-block waves-light">
-                    <img alt="langchain project" src="/assets/img/projects/ai_assistant.png" style="height: 100%; width: 100%" class="activator" />
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title activator teal-text hoverline">Image Description Assistant<i
-                        class="mdi-navigation-more-vert right"></i></span>
-                    <p>
-                      The algorithms takes image with text and provides description in various languages.
-                    </p>
-                  </div>
-                  <div class="card-reveal">
-                
-                    <span class="card-title grey-text"><small>Accomplishments</small><i
-                        class="mdi-navigation-close right"></i></span>
-                    <ul>
-                      <li><b>Language/Tools:</b> Python, Streamlit</li>
-                      <li><b>Packages/Libraries:</b> EasyOCR, LangChain, Transformers</li>
-                      <li>Image processing, Natural Language Processing</li>
-    
-                    </ul>
-                    <div class="card-action">
-                      <a aria-label="Visit " href="https://chinmayih.wordpress.com/2023/12/30/multilingual-image-description-assistant/" target="_blank" data-position="top"
-                        data-tooltip="Read More."
-                        class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                          class="fa fa-external-link"></i></a>
-                      <a aria-label="Visit the GitHub repo for  project" href="https://github.com/chinhegde/Multi-Lingual-Image-Description-Assistant"
-                        target="_blank" data-position="top" data-tooltip="View Source"
-                        class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                          class="fa fa-github"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="col s12 m6 l4">
-                <div class="card medium">
-                  <div class="card-image waves-effect waves-block waves-light">
-                    <img alt="langchain project" src="/assets/img/projects/pagerank.png" style="height: 100%; width: 100%" class="activator" />
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title activator teal-text hoverline">Website Ranking using Keyword Extraction and PageRank<i
-                        class="mdi-navigation-more-vert right"></i></span>
-                    <p>
-                      <!-- A NoSQL (MongoDB) solution to rank news articles using Google's PageRank algorithm -->
-                    </p>
-                  </div>
-                  <div class="card-reveal">
-                
-                    <span class="card-title grey-text"><small>Accomplishments</small><i
-                        class="mdi-navigation-close right"></i></span>
-                    <ul>
-                      <li><b>Language/Tools:</b> Python, MongoDB</li>
-                      <li><b>Packages/Libraries:</b> Scikit-Learn, NetworkX, PyMongo</li>
-                      <li>Recursive web scraping, NLP (keyword extraction), Database design, Query optimization, Network Analysis</li>
-    
-                    </ul>
-                    <div class="card-action">
-                      <a aria-label="Visit " href="https://chinmayih.wordpress.com/2023/12/31/from-scraps-to-rankings-decoding-the-news-web/" target="_blank" data-position="top"
-                        data-tooltip="Read More."
-                        class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                          class="fa fa-external-link"></i></a>
-                      <a aria-label="Visit the GitHub repo for  project" href="https://github.com/chinhegde/Website-Ranking-using-Keyword-Extraction-PageRank"
-                        target="_blank" data-position="top" data-tooltip="View Source"
-                        class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                          class="fa fa-github"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <a href="https://github.com/chinhegde?tab=repositories" target="_blank"><button class="button-15" role="button">View all projects</button></a>
-
-            </div>
-          </div>
-        </section>
-
-    <!-- Seventh Section: Education -->
-    <section id="education" class="section scrollspy">
-      <h3 class="page-title white-text teal">Education</h3>
-      <div class="container">
-        <div class="row">
-          <!-- Education -->
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://www.sjsu.edu/cs/" target="_blank" class="teal-text hoverline">San Jose State University</a></span>
-                </p>
-                <p class="brown-text">San Jose, CA, USA</p>
-                <p>
-                  <b>Master of Science in Computer Science</b>
-                  <br>
-                  <b>Graduating May 2024 </b>
-                </p>
-
-                <ul>
-                  <p>
-                    <b>Relevant Courseworks:</b>
-                  <ul>
-                    <li>Big Data Processing</li>
-                    <li>Cloud Computing</li>
-                    <li>Design and Analysis of Algorithms</li>                    
-                  </ul>
-                  </p>
-
-                </ul>
-              </div>
-            </div>
-
-            
-          </div>
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://cs.pes.edu/" target="_blank" class="teal-text hoverline">PES University - ECC</a></span>
-                </p>
-                <p class="brown-text">Bangalore, India</p>
-                <p>
-                  <b>Bachelor of Engineering in Computer Science</b>
-                  <br>
-                  <b>2016 - 2020 </b>
-                </p>
-
-                <ul>
-                  <p>
-                    <b>Relevant Courseworks:</b>
-                  <ul>
-                    <li>Database Management Systems</li>
-                    <li>Operating Systems</li>
-                    <li>Machine Learning</li>
-                  </ul>
-                  </p>
-
-                </ul>
-              </div>
-            </div>
-          </div>
+      <div class="what-card fade-in">
+        <div class="what-num">03</div>
+        <h3>Product Analytics & Insights</h3>
+        <p>From A/B tests that drove measurable churn reduction to NLP pipelines extracting signal from millions of data points — I translate messy data into decisions that move product metrics.</p>
+        <div class="what-tools">
+          <span class="tag">SQL</span>
+          <span class="tag">A/B Testing</span>
+          <span class="tag">NLP</span>
+          <span class="tag">Tableau</span>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Eight Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
-      <h3 class="page-title white-text teal">Contact</h3>
-      <div class="container">
-        <p>
-          <a aria-label="Email Chinmayi" href="mailto:chinmayilokeshwar.hegde@sjsu.edu" target="_blank" data-position="top"
-            data-tooltip="Email Chinmayi" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-envelope"></i><a aria-label="Email Chinmayi" href="mailto:chinmayilokeshwar.hegde@sjsu.edu"
-              class="hoverline">chinmayilokeshwar.hegde@sjsu.edu</a></a>
-        </p>
-        <p>
-          <a aria-label="View Chinmayi on GitHub" href="http://github.com/chinhegde" target="_blank"
-            data-position="top" data-tooltip="View Chinmayi on GitHub"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
-              aria-label="Chinmayi on Github" href="http://github.com/chinhegde" class="hoverline"
-              target="_blank">github.com/chinhegde</a></a>
-        </p>
-        <p>
-          <a aria-label="View Chinmayi on LinkedIn" href="http://linkedin.com/in/chinmayi-hegde" target="_blank"
-            data-position="top" data-tooltip="View Chinmayi on LinkedIn"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-linkedin"></i><a aria-label="Chinmayi on LinkedIn" href="http://linkedin.com/in/chinmayi-hegde"
-              class="hoverline" target="_blank">linkedin.com/in/chinmayi-hegde</a></a>
-        </p>
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-label">Experience</div>
+    <h2 class="section-title fade-in">Where I've<br>Done the <em>Work.</em></h2>
+
+    <div class="exp-item fade-in">
+      <div class="exp-meta">
+        <div class="exp-date">Jul 2022 – Present<br>Bentonville, AR</div>
+        <div class="exp-company-stamp">Walmart</div>
       </div>
-    </section>
-  </main>
+      <div class="exp-content">
+        <div class="exp-role">Senior Data Scientist</div>
+        <div class="exp-company-label">Walmart · AI Compliance & Governance</div>
+        <ul class="exp-bullets">
+          <li>Led LLM evaluation and selection for a production RAG-based enterprise chatbot; own the knowledge base architecture serving thousands of internal users.</li>
+          <li>Built an agentic AI workflow using LangChain at an internal hackathon — currently under review for adoption across the org.</li>
+          <li>Designed and executed fairness testing frameworks across fraud detection and employment models using Fairlearn and SHAP; findings resulted in models being sent back for remediation.</li>
+          <li>Drove end-to-end A/B test design that delivered measurable churn reduction across key user segments.</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="tag">LangChain</span>
+          <span class="tag">Fairlearn</span>
+          <span class="tag">SHAP</span>
+          <span class="tag">RAG</span>
+          <span class="tag">Python</span>
+          <span class="tag">AI Governance</span>
+        </div>
+      </div>
+    </div>
 
-  <!-- typed.js -->
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["Machine Learning Engineer", "Data Scientist", "Problem Solver"],
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
-    });
-  </script>
+    <div class="exp-item fade-in">
+      <div class="exp-meta">
+        <div class="exp-date">Jun 2023 – Aug 2023<br>New York, NY (Remote)</div>
+        <div class="exp-company-stamp">WebMD</div>
+      </div>
+      <div class="exp-content">
+        <div class="exp-role">Data Science Intern</div>
+        <div class="exp-company-label">WebMD</div>
+        <ul class="exp-bullets">
+          <li>Fine-tuned a BERT model on 26,000+ medical product names, achieving 90–95% classification accuracy — deployed to production.</li>
+          <li>Built ML pipelines for audience development (propensity modeling) and customer segmentation on GCP using BigQuery and Vertex AI.</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="tag">BERT</span>
+          <span class="tag">GCP</span>
+          <span class="tag">BigQuery</span>
+          <span class="tag">Vertex AI</span>
+          <span class="tag">NLP</span>
+        </div>
+      </div>
+    </div>
 
+    <div class="exp-item fade-in">
+      <div class="exp-meta">
+        <div class="exp-date">Sep 2020 – Jul 2022<br>Bangalore, India</div>
+        <div class="exp-company-stamp">Merkle</div>
+      </div>
+      <div class="exp-content">
+        <div class="exp-role">Data Scientist</div>
+        <div class="exp-company-label">Merkle (Dentsu)</div>
+        <ul class="exp-bullets">
+          <li>Built an anomaly detection system processing 2.5TB of behavioral data — reduced detection lag from hours to minutes.</li>
+          <li>Developed time series forecasting and NLP pipelines for multiple enterprise clients across e-commerce and retail verticals.</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="tag">Anomaly Detection</span>
+          <span class="tag">Time Series</span>
+          <span class="tag">BigQuery</span>
+          <span class="tag">Airflow</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label">Projects</div>
+    <h2 class="section-title fade-in">Things I've<br><em>Built.</em></h2>
 
-  <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+    <div class="projects-featured">
+      <div class="project-card fade-in">
+        <span class="project-badge">Featured</span>
+        <div class="project-num">01 — Most Impactful</div>
+        <h3>Enterprise RAG Chatbot & LLM Selection</h3>
+        <p>Led end-to-end LLM evaluation and selection for a production RAG-based chatbot at Walmart. Designed knowledge base architecture, evaluated retrieval quality across multiple LLM candidates, and own the system serving thousands of internal users.</p>
+        <div class="project-tags">
+          <span class="tag">RAG</span>
+          <span class="tag">LangChain</span>
+          <span class="tag">LLM Evaluation</span>
+          <span class="tag">Vector DBs</span>
+          <span class="tag">Production</span>
+        </div>
+        <div class="project-links">
+          <span class="project-link-muted">Internal Project</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <span class="project-badge">Featured</span>
+        <div class="project-num">02 — Most Impactful</div>
+        <h3>AI Fairness Testing Framework</h3>
+        <p>Designed and implemented a rigorous fairness testing suite for production ML models across fraud detection and employment use cases. Used Fairlearn and SHAP to surface disparate impact — findings resulted in models being sent back for remediation.</p>
+        <div class="project-tags">
+          <span class="tag">Fairlearn</span>
+          <span class="tag">SHAP</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">AI Ethics</span>
+          <span class="tag">Explainability</span>
+        </div>
+        <div class="project-links">
+          <span class="project-link-muted">Internal Project</span>
+        </div>
+      </div>
+    </div>
+
+    <button class="more-projects-toggle" id="moreToggle" onclick="toggleMore()">
+      <span>More Projects</span>
+      <span class="chevron">↓</span>
+    </button>
+
+    <div class="projects-more" id="moreProjects">
+      <div class="project-card small fade-in">
+        <div class="project-num">03</div>
+        <h3>LangChain Agentic Workflow</h3>
+        <p>Built an agentic AI system at a Walmart internal hackathon. Currently under review for org-wide adoption.</p>
+        <div class="project-tags">
+          <span class="tag">LangChain</span>
+          <span class="tag">Agents</span>
+          <span class="tag">Python</span>
+        </div>
+      </div>
+      <div class="project-card small fade-in">
+        <div class="project-num">04</div>
+        <h3>BERT Medical Product Classifier</h3>
+        <p>Fine-tuned BERT on 26,000+ medical product names at WebMD. Reached 90–95% accuracy and shipped to production.</p>
+        <div class="project-tags">
+          <span class="tag">BERT</span>
+          <span class="tag">NLP</span>
+          <span class="tag">GCP</span>
+        </div>
+      </div>
+      <div class="project-card small fade-in">
+        <div class="project-num">05</div>
+        <h3>Anomaly Detection at Scale</h3>
+        <p>Processed 2.5TB of behavioral data at Merkle — reduced detection lag from hours to minutes.</p>
+        <div class="project-tags">
+          <span class="tag">Anomaly Detection</span>
+          <span class="tag">BigQuery</span>
+          <span class="tag">Python</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/chinhegde" target="_blank" class="project-link">
+            <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="section-label">Education</div>
+    <h2 class="section-title fade-in">Academic<br><em>Foundation.</em></h2>
+    <div class="edu-grid">
+      <div class="edu-card fade-in">
+        <div class="edu-degree">M.S. Computer Science</div>
+        <div class="edu-school">San Jose State University</div>
+        <div class="edu-date">2022 – 2024 · San Jose, CA</div>
+      </div>
+      <div class="edu-card fade-in">
+        <div class="edu-degree">B.E. Computer Science</div>
+        <div class="edu-school">PES University</div>
+        <div class="edu-date">2016 – 2020 · Bangalore, India</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-label">Get In Touch</div>
+    <p class="contact-title">Let's<br><em>Talk.</em></p>
+    <p>Open to product DS and generalist DS roles in the Bay Area.<br>Reach out — I'd love to connect.</p>
+    <div class="contact-links">
+      <a href="mailto:chinmayilokeshwar.hegde@gmail.com" class="contact-link">Email ↗</a>
+      <a href="https://linkedin.com/in/chinmayi-hegde" target="_blank" class="contact-link">LinkedIn ↗</a>
+      <a href="https://github.com/chinhegde" target="_blank" class="contact-link">GitHub ↗</a>
+      <a href="/assets/resume.pdf" target="_blank" class="btn-primary">Resume ↗</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Chinmayi Hegde</p>
+    <p>Designed & built from scratch</p>
+  </footer>
+
   <script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
-  </script>
-</body>
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    });
+    function closeMobile() {
+      document.getElementById('mobileMenu').classList.remove('open');
+    }
 
+    function toggleMore() {
+      const btn = document.getElementById('moreToggle');
+      const more = document.getElementById('moreProjects');
+      btn.classList.toggle('open');
+      more.classList.toggle('open');
+      btn.querySelector('span:first-child').textContent =
+        btn.classList.contains('open') ? 'Hide Projects' : 'More Projects';
+      if (more.classList.contains('open')) {
+        more.querySelectorAll('.fade-in').forEach(el => {
+          setTimeout(() => el.classList.add('visible'), 60);
+        });
+      }
+    }
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
 </html>
