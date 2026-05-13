@@ -28,7 +28,6 @@
       --violet-mid: rgba(89,62,208,0.18);
       --border:     rgba(26,24,20,0.1);
       --border-mid: rgba(26,24,20,0.18);
-
       --font-display: 'Cormorant Garamond', serif;
       --font-body:    'DM Sans', sans-serif;
       --font-mono:    'DM Mono', monospace;
@@ -60,450 +59,98 @@
       backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--border);
     }
-
-    .nav-name {
-      font-family: var(--font-mono);
-      font-size: 13px;
-      font-weight: 500;
-      letter-spacing: 0.06em;
-      color: var(--ink);
-      text-decoration: none;
-    }
+    .nav-name { font-family: var(--font-mono); font-size: 13px; font-weight: 500; letter-spacing: 0.06em; color: var(--ink); text-decoration: none; }
     .nav-name span { color: var(--violet); }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 36px;
-      list-style: none;
-    }
-
-    .nav-links a {
-      font-family: var(--font-mono);
-      font-size: 11.5px;
-      font-weight: 500;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-      color: var(--ink-light);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
+    .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
+    .nav-links a { font-family: var(--font-mono); font-size: 11.5px; font-weight: 500; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-light); text-decoration: none; transition: color 0.2s; }
     .nav-links a:hover { color: var(--ink); }
-
-    .nav-resume {
-      font-family: var(--font-mono);
-      font-size: 11.5px;
-      font-weight: 500;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-      color: #fff !important;
-      background: var(--violet);
-      padding: 9px 20px;
-      border-radius: 2px;
-      text-decoration: none;
-      transition: opacity 0.2s;
-    }
+    .nav-resume { font-family: var(--font-mono); font-size: 11.5px; font-weight: 500; letter-spacing: 0.09em; text-transform: uppercase; color: #fff !important; background: var(--violet); padding: 9px 20px; border-radius: 2px; text-decoration: none; transition: opacity 0.2s; }
     .nav-resume:hover { opacity: 0.85; }
 
     /* ── HERO ── */
-    #hero {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 140px 56px 88px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-watermark {
-      position: absolute;
-      right: -20px;
-      top: 50%;
-      transform: translateY(-52%);
-      font-family: var(--font-display);
-      font-size: clamp(180px, 24vw, 380px);
-      font-weight: 300;
-      font-style: italic;
-      line-height: 1;
-      color: rgba(26,24,20,0.045);
-      pointer-events: none;
-      user-select: none;
-      white-space: nowrap;
-    }
-
-    .hero-eyebrow {
-      font-family: var(--font-mono);
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--violet);
-      margin-bottom: 28px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .hero-eyebrow::before {
-      content: '';
-      display: inline-block;
-      width: 28px;
-      height: 1px;
-      background: var(--violet);
-    }
-
-    h1.hero-title {
-      font-family: var(--font-display);
-      font-size: clamp(72px, 10vw, 152px);
-      font-weight: 300;
-      line-height: 0.9;
-      letter-spacing: -0.02em;
-      color: var(--ink);
-      margin-bottom: 40px;
-    }
-    h1.hero-title em {
-      font-style: italic;
-      color: var(--violet);
-    }
-
-    .hero-sub {
-      font-size: 18px;
-      font-weight: 300;
-      color: var(--ink-mid);
-      max-width: 520px;
-      line-height: 1.65;
-      margin-bottom: 52px;
-    }
-
-    .hero-actions {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .btn-primary {
-      font-family: var(--font-mono);
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-      color: #fff;
-      background: var(--violet);
-      padding: 14px 28px;
-      border-radius: 2px;
-      text-decoration: none;
-      transition: opacity 0.2s;
-    }
+    #hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 140px 56px 88px; position: relative; overflow: hidden; }
+    .hero-watermark { position: absolute; right: -20px; top: 50%; transform: translateY(-52%); font-family: var(--font-display); font-size: clamp(180px, 24vw, 380px); font-weight: 300; font-style: italic; line-height: 1; color: rgba(26,24,20,0.045); pointer-events: none; user-select: none; white-space: nowrap; }
+    .hero-eyebrow { font-family: var(--font-mono); font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--violet); margin-bottom: 28px; display: flex; align-items: center; gap: 12px; }
+    .hero-eyebrow::before { content: ''; display: inline-block; width: 28px; height: 1px; background: var(--violet); }
+    h1.hero-title { font-family: var(--font-display); font-size: clamp(72px, 10vw, 152px); font-weight: 300; line-height: 0.9; letter-spacing: -0.02em; color: var(--ink); margin-bottom: 40px; }
+    h1.hero-title em { font-style: italic; color: var(--violet); }
+    .hero-sub { font-size: 18px; font-weight: 300; color: var(--ink-mid); max-width: 520px; line-height: 1.65; margin-bottom: 52px; }
+    .hero-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .btn-primary { font-family: var(--font-mono); font-size: 12px; font-weight: 500; letter-spacing: 0.09em; text-transform: uppercase; color: #fff; background: var(--violet); padding: 14px 28px; border-radius: 2px; text-decoration: none; transition: opacity 0.2s; }
     .btn-primary:hover { opacity: 0.85; }
-
-    .btn-ghost {
-      font-family: var(--font-mono);
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-      color: var(--ink);
-      border: 1px solid var(--border-mid);
-      padding: 14px 28px;
-      border-radius: 2px;
-      text-decoration: none;
-      transition: border-color 0.2s;
-    }
+    .btn-ghost { font-family: var(--font-mono); font-size: 12px; font-weight: 500; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink); border: 1px solid var(--border-mid); padding: 14px 28px; border-radius: 2px; text-decoration: none; transition: border-color 0.2s; }
     .btn-ghost:hover { border-color: var(--ink-mid); }
-
-    .hero-socials {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .icon-link {
-      width: 42px; height: 42px;
-      border: 1px solid var(--border-mid);
-      border-radius: 2px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      color: var(--ink-light);
-      transition: color 0.2s, border-color 0.2s;
-    }
+    .hero-socials { display: flex; align-items: center; gap: 12px; }
+    .icon-link { width: 42px; height: 42px; border: 1px solid var(--border-mid); border-radius: 2px; display: flex; align-items: center; justify-content: center; text-decoration: none; color: var(--ink-light); transition: color 0.2s, border-color 0.2s; }
     .icon-link:hover { color: var(--ink); border-color: var(--ink-mid); }
     .icon-link svg { width: 17px; height: 17px; fill: currentColor; }
 
     /* ── SECTION SCAFFOLDING ── */
     section { padding: 108px 56px; }
-
-    .section-label {
-      font-family: var(--font-mono);
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--violet);
-      margin-bottom: 52px;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-    .section-label::after {
-      content: '';
-      flex: 1;
-      max-width: 64px;
-      height: 1px;
-      background: var(--border-mid);
-    }
-
-    h2.section-title {
-      font-family: var(--font-display);
-      font-size: clamp(52px, 6.5vw, 96px);
-      font-weight: 300;
-      line-height: 0.95;
-      letter-spacing: -0.02em;
-      color: var(--ink);
-      margin-bottom: 72px;
-    }
+    .section-label { font-family: var(--font-mono); font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--violet); margin-bottom: 52px; display: flex; align-items: center; gap: 14px; }
+    .section-label::after { content: ''; flex: 1; max-width: 64px; height: 1px; background: var(--border-mid); }
+    h2.section-title { font-family: var(--font-display); font-size: clamp(52px, 6.5vw, 96px); font-weight: 300; line-height: 0.95; letter-spacing: -0.02em; color: var(--ink); margin-bottom: 72px; }
     h2.section-title em { font-style: italic; color: var(--violet); }
 
-    /* ── WHAT I DO ── */
-    #what {
-      background: var(--bg-dark);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-    }
+    /* ── EDUCATION ── */
+    #education { max-width: 1180px; margin: 0 auto; }
+    .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    .edu-card { border: 1px solid var(--border-mid); padding: 44px; border-radius: 2px; transition: border-color 0.3s, background 0.3s; }
+    .edu-card:hover { border-color: var(--violet); background: var(--violet-dim); }
+    .edu-degree { font-family: var(--font-display); font-size: 30px; font-weight: 300; line-height: 1.15; color: var(--ink); margin-bottom: 10px; }
+    .edu-school { font-family: var(--font-mono); font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--violet); margin-bottom: 6px; }
+    .edu-date { font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-light); letter-spacing: 0.04em; }
 
-    .what-grid {
+    /* ── EXPERIENCE ── */
+    #experience { max-width: 1180px; margin: 0 auto; }
+    .exp-item { display: grid; grid-template-columns: 220px 1fr; gap: 0 72px; padding: 56px 0; border-bottom: 1px solid var(--border); }
+    .exp-item:first-of-type { border-top: 1px solid var(--border); }
+    .exp-meta { padding-top: 6px; }
+    .exp-date { font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-light); letter-spacing: 0.04em; line-height: 1.7; }
+    .exp-company-stamp { margin-top: 20px; font-family: var(--font-display); font-style: italic; font-size: 20px; color: var(--ink); opacity: 0.22; letter-spacing: 0.02em; }
+    .exp-role { font-family: var(--font-display); font-size: clamp(32px, 3.5vw, 44px); font-weight: 300; line-height: 1; color: var(--ink); margin-bottom: 6px; }
+    .exp-company-label { font-family: var(--font-mono); font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--violet); margin-bottom: 4px; }
+    .exp-company-note { font-family: var(--font-mono); font-size: 11px; color: var(--ink-light); letter-spacing: 0.04em; margin-bottom: 28px; }
+    .exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+    .exp-bullets li { font-size: 15px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; padding-left: 22px; position: relative; }
+    .exp-bullets li::before { content: '–'; position: absolute; left: 0; color: var(--violet); }
+    .exp-tags { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag { font-family: var(--font-mono); font-size: 10.5px; font-weight: 500; letter-spacing: 0.06em; color: var(--violet); background: var(--violet-dim); padding: 4px 10px; border-radius: 2px; }
+
+    /* ── WHAT I DO ── */
+    #what { background: var(--bg-dark); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .what-grid { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--border-mid); }
+    .what-card { padding: 52px 44px; border-right: 1px solid var(--border-mid); transition: background 0.3s; }
+    .what-card:last-child { border-right: none; }
+    .what-card:hover { background: var(--bg-deeper); }
+    .what-num { font-family: var(--font-mono); font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--violet); margin-bottom: 28px; }
+    .what-card h3 { font-family: var(--font-display); font-size: 28px; font-weight: 400; line-height: 1.15; color: var(--ink); margin-bottom: 16px; }
+    .what-card p { font-size: 14.5px; font-weight: 300; color: var(--ink-mid); line-height: 1.75; }
+
+    /* ── PROJECTS ── */
+    #projects { background: var(--bg-dark); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+
+    .projects-featured {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       border: 1px solid var(--border-mid);
     }
-
-    .what-card {
-      padding: 52px 44px;
-      border-right: 1px solid var(--border-mid);
-      transition: background 0.3s;
-    }
-    .what-card:last-child { border-right: none; }
-    .what-card:hover { background: var(--bg-deeper); }
-
-    .what-num {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      font-weight: 500;
-      letter-spacing: 0.14em;
-      color: var(--violet);
-      margin-bottom: 28px;
-    }
-
-    .what-card h3 {
-      font-family: var(--font-display);
-      font-size: 30px;
-      font-weight: 400;
-      line-height: 1.1;
-      color: var(--ink);
-      margin-bottom: 16px;
-    }
-
-    .what-card p {
-      font-size: 14.5px;
-      font-weight: 300;
-      color: var(--ink-mid);
-      line-height: 1.75;
-    }
-
-    .what-tools {
-      margin-top: 24px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .tag {
-      font-family: var(--font-mono);
-      font-size: 10.5px;
-      font-weight: 500;
-      letter-spacing: 0.06em;
-      color: var(--violet);
-      background: var(--violet-dim);
-      padding: 4px 10px;
-      border-radius: 2px;
-    }
-
-    /* ── EXPERIENCE ── */
-    #experience { max-width: 1180px; margin: 0 auto; }
-
-    .exp-item {
-      display: grid;
-      grid-template-columns: 220px 1fr;
-      gap: 0 72px;
-      padding: 56px 0;
-      border-bottom: 1px solid var(--border);
-    }
-    .exp-item:first-of-type { border-top: 1px solid var(--border); }
-
-    .exp-meta { padding-top: 6px; }
-
-    .exp-date {
-      font-family: var(--font-mono);
-      font-size: 11.5px;
-      color: var(--ink-light);
-      letter-spacing: 0.04em;
-      line-height: 1.7;
-    }
-
-    .exp-company-stamp {
-      margin-top: 20px;
-      font-family: var(--font-display);
-      font-style: italic;
-      font-size: 20px;
-      color: var(--ink);
-      opacity: 0.22;
-      letter-spacing: 0.02em;
-    }
-
-    .exp-role {
-      font-family: var(--font-display);
-      font-size: clamp(32px, 3.5vw, 44px);
-      font-weight: 300;
-      line-height: 1;
-      color: var(--ink);
-      margin-bottom: 6px;
-    }
-
-    .exp-company-label {
-      font-family: var(--font-mono);
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--violet);
-      margin-bottom: 28px;
-    }
-
-    .exp-bullets {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .exp-bullets li {
-      font-size: 15px;
-      font-weight: 300;
-      color: var(--ink-mid);
-      line-height: 1.7;
-      padding-left: 22px;
-      position: relative;
-    }
-    .exp-bullets li::before {
-      content: '–';
-      position: absolute;
-      left: 0;
-      color: var(--violet);
-    }
-
-    .exp-tags {
-      margin-top: 24px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    /* ── PROJECTS ── */
-    #projects {
-      background: var(--bg-dark);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .projects-featured {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      border: 1px solid var(--border-mid);
-    }
-
-    .project-card {
-      padding: 52px 48px;
-      border-right: 1px solid var(--border-mid);
-      display: flex;
-      flex-direction: column;
-      transition: background 0.3s;
-    }
+    .project-card { padding: 44px 40px; border-right: 1px solid var(--border-mid); display: flex; flex-direction: column; transition: background 0.3s; }
     .project-card:last-child { border-right: none; }
     .project-card:hover { background: var(--bg-deeper); }
-
-    .project-badge {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      font-weight: 500;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--violet);
-      background: var(--violet-dim);
-      padding: 4px 12px;
-      border-radius: 2px;
-      display: inline-block;
-      margin-bottom: 28px;
-      align-self: flex-start;
-    }
-
-    .project-num {
-      font-family: var(--font-mono);
-      font-size: 10.5px;
-      color: var(--ink-light);
-      letter-spacing: 0.1em;
-      margin-bottom: 20px;
-    }
-
-    .project-card h3 {
-      font-family: var(--font-display);
-      font-size: clamp(26px, 2.8vw, 38px);
-      font-weight: 300;
-      line-height: 1.1;
-      color: var(--ink);
-      margin-bottom: 18px;
-    }
-
-    .project-card p {
-      font-size: 14.5px;
-      font-weight: 300;
-      color: var(--ink-mid);
-      line-height: 1.75;
-      flex: 1;
-    }
-
-    .project-tags {
-      margin-top: 24px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .project-links { margin-top: 28px; }
-
-    .project-link {
-      font-family: var(--font-mono);
-      font-size: 11.5px;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--violet);
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: opacity 0.2s;
-    }
+    .project-badge { font-family: var(--font-mono); font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--violet); background: var(--violet-dim); padding: 4px 12px; border-radius: 2px; display: inline-block; margin-bottom: 24px; align-self: flex-start; }
+    .project-num { font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-light); letter-spacing: 0.1em; margin-bottom: 16px; }
+    .project-card h3 { font-family: var(--font-display); font-size: clamp(22px, 2.2vw, 32px); font-weight: 300; line-height: 1.1; color: var(--ink); margin-bottom: 14px; }
+    .project-card p { font-size: 14px; font-weight: 300; color: var(--ink-mid); line-height: 1.75; flex: 1; }
+    .project-tags { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px; }
+    .project-links { margin-top: 24px; }
+    .project-link { font-family: var(--font-mono); font-size: 11.5px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--violet); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: opacity 0.2s; }
     .project-link:hover { opacity: 0.65; }
     .project-link svg { width: 13px; height: 13px; fill: currentColor; }
+    .project-link-muted { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; color: var(--ink-light); }
 
-    .project-link-muted {
-      font-family: var(--font-mono);
-      font-size: 11.5px;
-      letter-spacing: 0.08em;
-      color: var(--ink-light);
-    }
+    /* toggle buttons row */
+    .projects-toggles { display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
 
     .more-projects-toggle {
       background: none;
@@ -519,7 +166,6 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      margin-top: 28px;
       border-radius: 2px;
       transition: border-color 0.2s, background 0.2s;
     }
@@ -527,175 +173,84 @@
     .more-projects-toggle .chevron { transition: transform 0.3s; display: inline-block; }
     .more-projects-toggle.open .chevron { transform: rotate(180deg); }
 
+    .publications-toggle {
+      background: var(--violet);
+      border: 1px solid var(--violet);
+      color: #fff;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      padding: 15px 32px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-radius: 2px;
+      transition: opacity 0.2s;
+    }
+    .publications-toggle:hover { opacity: 0.85; }
+    .publications-toggle .chevron { transition: transform 0.3s; display: inline-block; }
+    .publications-toggle.open .chevron { transform: rotate(180deg); }
+
     .projects-more {
       display: none;
       grid-template-columns: repeat(3, 1fr);
       border: 1px solid var(--border-mid);
       border-top: none;
+      margin-top: 1px;
     }
     .projects-more.open { display: grid; }
 
-    .project-card.small { padding: 40px 36px; }
-    .project-card.small h3 { font-size: 24px; }
-    .project-card.small:nth-child(3) { border-right: none; }
-
-    /* ── EDUCATION ── */
-    #education { max-width: 1180px; margin: 0 auto; }
-
-    .edu-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 28px;
+    .publications-grid {
+      display: none;
+      grid-template-columns: repeat(3, 1fr);
+      border: 1px solid var(--violet-mid);
+      border-top: none;
+      margin-top: 1px;
     }
+    .publications-grid.open { display: grid; }
 
-    .edu-card {
-      border: 1px solid var(--border-mid);
-      padding: 44px;
-      border-radius: 2px;
-      transition: border-color 0.3s, background 0.3s;
-    }
-    .edu-card:hover { border-color: var(--violet); background: var(--violet-dim); }
+    .pub-card { padding: 40px 36px; border-right: 1px solid var(--violet-mid); display: flex; flex-direction: column; background: var(--bg-dark); transition: background 0.3s; }
+    .pub-card:last-child { border-right: none; }
+    .pub-card:hover { background: var(--bg-deeper); }
+    .pub-label { font-family: var(--font-mono); font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--violet); background: var(--violet-dim); padding: 4px 10px; border-radius: 2px; display: inline-block; margin-bottom: 20px; align-self: flex-start; }
+    .pub-card h3 { font-family: var(--font-display); font-size: 22px; font-weight: 300; line-height: 1.2; color: var(--ink); margin-bottom: 12px; }
+    .pub-card p { font-size: 13.5px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; flex: 1; }
+    .pub-link { margin-top: 20px; font-family: var(--font-mono); font-size: 11.5px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--violet); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: opacity 0.2s; }
+    .pub-link:hover { opacity: 0.65; }
 
-    .edu-degree {
-      font-family: var(--font-display);
-      font-size: 30px;
-      font-weight: 300;
-      line-height: 1.15;
-      color: var(--ink);
-      margin-bottom: 10px;
-    }
-
-    .edu-school {
-      font-family: var(--font-mono);
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--violet);
-      margin-bottom: 6px;
-    }
-
-    .edu-date {
-      font-family: var(--font-mono);
-      font-size: 11.5px;
-      color: var(--ink-light);
-      letter-spacing: 0.04em;
-    }
+    /* small project cards in more grid */
+    .project-card.small { padding: 36px 32px; }
+    .project-card.small h3 { font-size: 21px; }
+    .project-card.small:nth-child(3n) { border-right: none; }
+    .project-card.small:nth-child(-n+3) { border-bottom: 1px solid var(--border-mid); }
 
     /* ── CONTACT ── */
-    #contact {
-      padding: 120px 56px;
-      border-top: 1px solid var(--border);
-      text-align: center;
-    }
-
-    #contact .section-label {
-      justify-content: center;
-    }
+    #contact { padding: 120px 56px; border-top: 1px solid var(--border); text-align: center; }
+    #contact .section-label { justify-content: center; }
     #contact .section-label::after { display: none; }
-
-    .contact-title {
-      font-family: var(--font-display);
-      font-size: clamp(64px, 9vw, 120px);
-      font-weight: 300;
-      line-height: 0.92;
-      letter-spacing: -0.02em;
-      color: var(--ink);
-      margin-bottom: 24px;
-    }
+    .contact-title { font-family: var(--font-display); font-size: clamp(64px, 9vw, 120px); font-weight: 300; line-height: 0.92; letter-spacing: -0.02em; color: var(--ink); margin-bottom: 24px; }
     .contact-title em { font-style: italic; color: var(--violet); }
-
-    #contact > p {
-      font-size: 17px;
-      font-weight: 300;
-      color: var(--ink-mid);
-      margin-bottom: 52px;
-      line-height: 1.65;
-    }
-
-    .contact-links {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-
-    .contact-link {
-      font-family: var(--font-mono);
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-      color: var(--ink-mid);
-      text-decoration: none;
-      border: 1px solid var(--border-mid);
-      padding: 14px 28px;
-      border-radius: 2px;
-      transition: color 0.2s, border-color 0.2s;
-    }
+    #contact > p { font-size: 17px; font-weight: 300; color: var(--ink-mid); margin-bottom: 52px; line-height: 1.65; }
+    .contact-links { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; }
+    .contact-link { font-family: var(--font-mono); font-size: 12px; font-weight: 500; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-mid); text-decoration: none; border: 1px solid var(--border-mid); padding: 14px 28px; border-radius: 2px; transition: color 0.2s, border-color 0.2s; }
     .contact-link:hover { color: var(--ink); border-color: var(--ink-mid); }
 
     /* ── FOOTER ── */
-    footer {
-      padding: 24px 56px;
-      border-top: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    footer p {
-      font-family: var(--font-mono);
-      font-size: 11.5px;
-      color: var(--ink-light);
-      letter-spacing: 0.04em;
-    }
+    footer { padding: 24px 56px; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
+    footer p { font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-light); letter-spacing: 0.04em; }
 
-    /* ── HAMBURGER / MOBILE MENU ── */
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-      background: none;
-      border: none;
-      padding: 4px;
-    }
-    .hamburger span {
-      display: block;
-      width: 22px;
-      height: 1.5px;
-      background: var(--ink);
-    }
-
-    .mobile-menu {
-      display: none;
-      position: fixed;
-      top: 68px; left: 0; right: 0;
-      background: var(--bg);
-      border-bottom: 1px solid var(--border);
-      padding: 28px 32px;
-      flex-direction: column;
-      gap: 22px;
-      z-index: 99;
-    }
+    /* ── HAMBURGER ── */
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+    .hamburger span { display: block; width: 22px; height: 1.5px; background: var(--ink); }
+    .mobile-menu { display: none; position: fixed; top: 68px; left: 0; right: 0; background: var(--bg); border-bottom: 1px solid var(--border); padding: 28px 32px; flex-direction: column; gap: 22px; z-index: 99; }
     .mobile-menu.open { display: flex; }
-    .mobile-menu a {
-      font-family: var(--font-mono);
-      font-size: 13px;
-      font-weight: 500;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-      color: var(--ink-mid);
-      text-decoration: none;
-    }
+    .mobile-menu a { font-family: var(--font-mono); font-size: 13px; font-weight: 500; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-mid); text-decoration: none; }
 
     /* ── FADE IN ── */
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.65s ease, transform 0.65s ease;
-    }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.65s ease, transform 0.65s ease; }
     .fade-in.visible { opacity: 1; transform: translateY(0); }
 
     /* ── RESPONSIVE ── */
@@ -703,29 +258,28 @@
       nav { padding: 0 28px; }
       .nav-links { display: none; }
       .hamburger { display: flex; }
-
       #hero { padding: 108px 28px 72px; }
       section { padding: 80px 28px; }
       #experience, #education { padding-left: 28px; padding-right: 28px; }
       #contact { padding: 80px 28px; }
       footer { padding: 20px 28px; flex-direction: column; gap: 6px; text-align: center; }
-
       .what-grid { grid-template-columns: 1fr; }
       .what-card { border-right: none; border-bottom: 1px solid var(--border-mid); }
       .what-card:last-child { border-bottom: none; }
-
       .projects-featured { grid-template-columns: 1fr; }
       .project-card { border-right: none; border-bottom: 1px solid var(--border-mid); }
       .project-card:last-child { border-bottom: none; }
       .projects-more { grid-template-columns: 1fr; }
+      .publications-grid { grid-template-columns: 1fr; }
+      .pub-card { border-right: none; border-bottom: 1px solid var(--violet-mid); }
+      .pub-card:last-child { border-bottom: none; }
       .project-card.small { border-right: none; border-bottom: 1px solid var(--border-mid); }
       .project-card.small:last-child { border-bottom: none; }
-
       .exp-item { grid-template-columns: 1fr; gap: 4px; }
       .exp-meta { display: flex; gap: 20px; align-items: baseline; padding-bottom: 12px; }
       .exp-company-stamp { display: none; }
-
       .edu-grid { grid-template-columns: 1fr; }
+      .projects-toggles { flex-direction: column; }
     }
   </style>
 </head>
@@ -735,10 +289,10 @@
   <nav>
     <a href="#hero" class="nav-name">CH<span>.</span></a>
     <ul class="nav-links">
-      <li><a href="#what">What I Do</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
       <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#what">What I Do</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="/assets/resume.pdf" target="_blank" class="nav-resume">Resume ↗</a></li>
     </ul>
@@ -749,10 +303,10 @@
 
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#what" onclick="closeMobile()">What I Do</a>
-    <a href="#experience" onclick="closeMobile()">Experience</a>
-    <a href="#projects" onclick="closeMobile()">Projects</a>
     <a href="#education" onclick="closeMobile()">Education</a>
+    <a href="#experience" onclick="closeMobile()">Experience</a>
+    <a href="#what" onclick="closeMobile()">What I Do</a>
+    <a href="#projects" onclick="closeMobile()">Projects</a>
     <a href="#contact" onclick="closeMobile()">Contact</a>
     <a href="/assets/resume.pdf" target="_blank">Resume ↗</a>
   </div>
@@ -760,11 +314,11 @@
   <!-- HERO -->
   <section id="hero">
     <div class="hero-watermark" aria-hidden="true">Data</div>
-    <div class="hero-eyebrow">Based in the US</div>
+    <div class="hero-eyebrow">Open to Bay Area &amp; Remote</div>
     <h1 class="hero-title">Chinmayi<br><em>Hegde.</em></h1>
     <p class="hero-sub">Data Scientist. Production ML, responsible AI, and LLM systems — with a growing focus on product analytics and user-facing impact.</p>
     <div class="hero-actions">
-      <a href="/assets/resume/resume.pdf" target="_blank" class="btn-primary">Download Resume</a>
+      <a href="/assets/resume.pdf" target="_blank" class="btn-primary">Download Resume</a>
       <a href="#experience" class="btn-ghost">View Work</a>
       <div class="hero-socials">
         <a href="https://linkedin.com/in/chinmayi-hegde" target="_blank" class="icon-link" aria-label="LinkedIn">
@@ -777,236 +331,10 @@
     </div>
   </section>
 
-  <!-- WHAT I DO -->
-<section id="what">
-  <div class="section-label">What I Do</div>
-  <div class="what-grid">
-    <div class="what-card fade-in">
-      <div class="what-num">Product Data Science</div>
-      <h3>I find out why your metrics are moving — and what to do about it</h3>
-      <p>I turn user behavior data into product decisions. From designing A/B tests that surface real signal to building models that explain churn, engagement, and retention — I work at the intersection of data and product thinking, not just data pipelines.</p>
-    </div>
-    <div class="what-card fade-in">
-      <div class="what-num">LLMs and Production ML</div>
-      <h3>I take AI from prototype to something users actually rely on</h3>
-      <p>I've led LLM selection for a live enterprise system, owned knowledge base architecture in production, and built agentic workflows end to end. I understand the gap between a model that works in a notebook and one that holds up at scale.</p>
-    </div>
-    <div class="what-card fade-in">
-      <div class="what-num">Responsible AI</div>
-      <h3>I make sure your models don't fail the people they affect</h3>
-      <p>I audit production ML for bias, disparate impact, and failure modes that hurt users and create risk. I've reviewed fraud and employment models and sent them back when they didn't meet the bar — before they shipped.</p>
-    </div>
-  </div>
-</section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <div class="section-label">Experience</div>
-    <h2 class="section-title fade-in">Where I've<br>Done the <em>Work.</em></h2>
-
-    <div class="exp-item fade-in">
-      <div class="exp-meta">
-        <div class="exp-date">Jul 2022 – Present<br>Bentonville, AR</div>
-        <div class="exp-company-stamp">Walmart</div>
-      </div>
-      <div class="exp-content">
-        <div class="exp-role">Senior Data Scientist</div>
-        <div class="exp-company-label">Walmart · AI Compliance & Governance</div>
-        <ul class="exp-bullets">
-          <li>Led LLM evaluation and selection for a production RAG-based enterprise chatbot; own the knowledge base architecture serving thousands of internal users.</li>
-          <li>Built an agentic AI workflow using LangChain at an internal hackathon — currently under review for adoption across the org.</li>
-          <li>Designed and executed fairness testing frameworks across fraud detection and employment models using Fairlearn and SHAP; findings resulted in models being sent back for remediation.</li>
-          <li>Drove end-to-end A/B test design that delivered measurable churn reduction across key user segments.</li>
-        </ul>
-        <div class="exp-tags">
-          <span class="tag">LangChain</span>
-          <span class="tag">Fairlearn</span>
-          <span class="tag">SHAP</span>
-          <span class="tag">RAG</span>
-          <span class="tag">Python</span>
-          <span class="tag">AI Governance</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="exp-item fade-in">
-      <div class="exp-meta">
-        <div class="exp-date">Jun 2023 – Aug 2023<br>New York, NY (Remote)</div>
-        <div class="exp-company-stamp">WebMD</div>
-      </div>
-      <div class="exp-content">
-        <div class="exp-role">Data Science Intern</div>
-        <div class="exp-company-label">WebMD</div>
-        <ul class="exp-bullets">
-          <li>Fine-tuned a BERT model on 26,000+ medical product names, achieving 90–95% classification accuracy — deployed to production.</li>
-          <li>Built ML pipelines for audience development (propensity modeling) and customer segmentation on GCP using BigQuery and Vertex AI.</li>
-        </ul>
-        <div class="exp-tags">
-          <span class="tag">BERT</span>
-          <span class="tag">GCP</span>
-          <span class="tag">BigQuery</span>
-          <span class="tag">Vertex AI</span>
-          <span class="tag">NLP</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="exp-item fade-in">
-      <div class="exp-meta">
-        <div class="exp-date">Sep 2020 – Jul 2022<br>Bangalore, India</div>
-        <div class="exp-company-stamp">Merkle</div>
-      </div>
-      <div class="exp-content">
-        <div class="exp-role">Data Scientist</div>
-        <div class="exp-company-label">Merkle (Dentsu)</div>
-        <ul class="exp-bullets">
-          <li>Built an anomaly detection system processing 2.5TB of behavioral data — reduced detection lag from hours to minutes.</li>
-          <li>Developed time series forecasting and NLP pipelines for multiple enterprise clients across e-commerce and retail verticals.</li>
-        </ul>
-        <div class="exp-tags">
-          <span class="tag">Anomaly Detection</span>
-          <span class="tag">Time Series</span>
-          <span class="tag">BigQuery</span>
-          <span class="tag">Airflow</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
- <!-- PROJECTS -->
-  <section id="projects">
-    <div class="section-label">Projects</div>
-    <h2 class="section-title fade-in">Things I've<br><em>Built.</em></h2>
-
-    <div class="projects-featured">
-      <div class="project-card fade-in">
-        <span class="project-badge">Featured</span>
-        <div class="project-num">01</div>
-        <h3>Enterprise RAG Chatbot & LLM Selection</h3>
-        <p>Led end-to-end LLM evaluation and selection for a production RAG-based chatbot at Walmart. Designed knowledge base architecture, evaluated retrieval quality across multiple LLM candidates, and own the system serving thousands of internal users.</p>
-        <div class="project-tags">
-          <span class="tag">RAG</span>
-          <span class="tag">LangChain</span>
-          <span class="tag">LLM Evaluation</span>
-          <span class="tag">Vector DBs</span>
-          <span class="tag">Production</span>
-        </div>
-        <div class="project-links">
-          <span class="project-link-muted">Internal Project</span>
-        </div>
-      </div>
-
-      <div class="project-card fade-in">
-        <span class="project-badge">Featured</span>
-        <div class="project-num">02</div>
-        <h3>AI Fairness Testing Framework</h3>
-        <p>Designed and implemented a rigorous fairness testing suite for production ML models across fraud detection and employment use cases. Used Fairlearn and SHAP to surface disparate impact — findings resulted in models being sent back for remediation.</p>
-        <div class="project-tags">
-          <span class="tag">Fairlearn</span>
-          <span class="tag">SHAP</span>
-          <span class="tag">scikit-learn</span>
-          <span class="tag">AI Ethics</span>
-          <span class="tag">Explainability</span>
-        </div>
-        <div class="project-links">
-          <span class="project-link-muted">Internal Project</span>
-        </div>
-      </div>
-    </div>
-
-    <button class="more-projects-toggle" id="moreToggle" onclick="toggleMore()">
-      <span>More Projects</span>
-      <span class="chevron">↓</span>
-    </button>
-
-    <div class="projects-more" id="moreProjects">
-      <div class="project-card small fade-in">
-        <div class="project-num">03</div>
-        <h3>LangChain Agentic Workflow</h3>
-        <p>Built an agentic AI system to automate Walmart's internal AI governance intake process. Originally developed at the internal Global Governance Hackathon, then extended for scale. The agent routes associate requests, asks clarifying questions to assess risk level for a given AI use case, processes attachments to extract relevant information, and draws from a knowledge base built by AI governance. Currently under review for org-wide adoption across 1M+ Walmart associates.</p>
-        <div class="project-tags">
-          <span class="tag">LangChain</span>
-          <span class="tag">Agents</span>
-          <span class="tag">Python</span>
-        </div>
-      </div>
-      <div class="project-card small fade-in">
-        <div class="project-num">04</div>
-        <h3>BERT Medical Product Classifier</h3>
-        <p>Fine-tuned BERT on 26,000+ medical product names at WebMD. Reached 90–95% accuracy and shipped to production.</p>
-        <div class="project-tags">
-          <span class="tag">BERT</span>
-          <span class="tag">NLP</span>
-          <span class="tag">GCP</span>
-        </div>
-      </div>
-      <div class="project-card small fade-in">
-        <div class="project-num">05</div>
-        <h3>Anomaly Detection at Scale</h3>
-        <p>Processed 2.5TB of behavioral data at Merkle — reduced detection lag from hours to minutes.</p>
-        <div class="project-tags">
-          <span class="tag">Anomaly Detection</span>
-          <span class="tag">BigQuery</span>
-          <span class="tag">Python</span>
-        </div>
-      </div>
-      <div class="project-card small fade-in">
-        <div class="project-num">06</div>
-        <h3>Schedulize — Email to Calendar</h3>
-        <p>Automates conversion of itineraries from emails into Google Calendar events using NLP parsing. A practical tool that solves a real scheduling problem end-to-end.</p>
-        <div class="project-tags">
-          <span class="tag">NLP</span>
-          <span class="tag">Python</span>
-          <span class="tag">Google Calendar API</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/chinhegde/Schedulize-Email-to-Calendar-Converter" target="_blank" class="project-link">
-            <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-            GitHub
-          </a>
-        </div>
-      </div>
-      <div class="project-card small fade-in">
-        <div class="project-num">07</div>
-        <h3>Multilingual Image Description Assistant</h3>
-        <p>Streamlit app combining Hugging Face image-to-text, LangChain translation, and text-to-speech to describe images in multiple languages with audio output.</p>
-        <div class="project-tags">
-          <span class="tag">LangChain</span>
-          <span class="tag">Hugging Face</span>
-          <span class="tag">Streamlit</span>
-          <span class="tag">NLP</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/chinhegde/Multi-Lingual-Image-Description-Assistant" target="_blank" class="project-link">
-            <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-            GitHub
-          </a>
-        </div>
-      </div>
-      <div class="project-card small fade-in">
-        <div class="project-num">08</div>
-        <h3>Customer Churn Prediction</h3>
-        <p>ML pipeline comparing five algorithms across two datasets for churn prediction. Covers end-to-end feature engineering, model selection, and evaluation.</p>
-        <div class="project-tags">
-          <span class="tag">scikit-learn</span>
-          <span class="tag">Python</span>
-          <span class="tag">ML</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/chinhegde/Customer-Churn-Prediction" target="_blank" class="project-link">
-            <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-            GitHub
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
   <!-- EDUCATION -->
   <section id="education">
     <div class="section-label">Education</div>
-    <h2 class="section-title fade-in">Edu<br><em>cation.</em></h2>
+    <h2 class="section-title fade-in">Academic<br><em>Foundation.</em></h2>
     <div class="edu-grid">
       <div class="edu-card fade-in">
         <div class="edu-degree">M.S. Computer Science</div>
@@ -1021,11 +349,332 @@
     </div>
   </section>
 
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-label">Experience</div>
+    <h2 class="section-title fade-in">Where I've<br><em>Worked.</em></h2>
+
+    <!-- Walmart -->
+    <div class="exp-item fade-in">
+      <div class="exp-meta">
+        <div class="exp-date">Jan 2025 – Present<br>Bentonville, AR</div>
+        <div class="exp-company-stamp">Walmart</div>
+      </div>
+      <div class="exp-content">
+        <div class="exp-role">Senior Data Scientist</div>
+        <div class="exp-company-label">Walmart · AI Governance</div>
+        <ul class="exp-bullets">
+          <li>Built an agentic AI workflow (Python, LangChain, RAG) to help non-developers assess AI use case feasibility and risk — originally developed at an internal hackathon, then hardened for scale and under review for adoption across 1M+ Walmart associates.</li>
+          <li>Developing a RAG-based chatbot (Python, GPT-4) to enable self-serve access to compliance and intake information, improving developer experience and reducing manual support overhead.</li>
+          <li>Designed and executed fairness testing frameworks across fraud detection, employment, and finance models using Fairlearn and SHAP; surfaced disparate impact and sent models back for remediation.</li>
+          <li>Evaluated 100+ ML models to inform product deployment decisions and improve reliability across use cases.</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="tag">LangChain</span>
+          <span class="tag">RAG</span>
+          <span class="tag">GPT-4</span>
+          <span class="tag">Fairlearn</span>
+          <span class="tag">SHAP</span>
+          <span class="tag">Python</span>
+          <span class="tag">AI Governance</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- NASA -->
+    <div class="exp-item fade-in">
+      <div class="exp-meta">
+        <div class="exp-date">Nov 2024 – Jan 2025<br>Pleasanton, CA</div>
+        <div class="exp-company-stamp">NASA</div>
+      </div>
+      <div class="exp-content">
+        <div class="exp-role">Data Scientist</div>
+        <div class="exp-company-label">NASA · AI for Life in Space</div>
+        <div class="exp-company-note">Contract via Crowdplat</div>
+        <ul class="exp-bullets">
+          <li>Built a deep learning model (Python, AWS) to classify rodent cells from spaceflight vs. ground control experiments using image and tabular data for NASA's AI4LS research program.</li>
+          <li>Implemented explainable AI (XAI) functionality using Streamlit to improve model transparency and interpretability for researchers.</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="tag">Deep Learning</span>
+          <span class="tag">XAI</span>
+          <span class="tag">AWS</span>
+          <span class="tag">Streamlit</span>
+          <span class="tag">Python</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chegg -->
+    <div class="exp-item fade-in">
+      <div class="exp-meta">
+        <div class="exp-date">Sep 2024 – Nov 2024<br>Santa Clara, CA</div>
+        <div class="exp-company-stamp">Chegg</div>
+      </div>
+      <div class="exp-content">
+        <div class="exp-role">Data Scientist II</div>
+        <div class="exp-company-label">Chegg</div>
+        <ul class="exp-bullets">
+          <li>Built causal impact models to assess marketing campaign effectiveness across 11 social media platforms.</li>
+          <li>Oversaw 5 A/B tests with Optimizely on refund and payment pages, delivering insights to reduce churn.</li>
+          <li>Automated reporting for perks activation among subscribers using AWS Redshift, Python, and Tableau.</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="tag">Causal Inference</span>
+          <span class="tag">A/B Testing</span>
+          <span class="tag">Optimizely</span>
+          <span class="tag">AWS Redshift</span>
+          <span class="tag">Tableau</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- WebMD -->
+    <div class="exp-item fade-in">
+      <div class="exp-meta">
+        <div class="exp-date">Jun 2023 – Aug 2023<br>New York, NY (Remote)</div>
+        <div class="exp-company-stamp">WebMD</div>
+      </div>
+      <div class="exp-content">
+        <div class="exp-role">Software Development Intern</div>
+        <div class="exp-company-label">WebMD</div>
+        <ul class="exp-bullets">
+          <li>Fine-tuned BERT models with PyTorch for sequence labeling of 26,000+ product names; used Llama API prompt engineering achieving 92–94% accuracy.</li>
+          <li>Built an ML pipeline (Python, BigQuery, Vertex AI) for time series forecasting, delivering insights to 300K+ healthcare professionals.</li>
+          <li>Built propensity and customer segmentation models to optimize outreach for the email marketing team.</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="tag">BERT</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">GCP</span>
+          <span class="tag">BigQuery</span>
+          <span class="tag">Vertex AI</span>
+          <span class="tag">NLP</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Merkle -->
+    <div class="exp-item fade-in">
+      <div class="exp-meta">
+        <div class="exp-date">Jan 2020 – Jun 2022<br>Bangalore, India</div>
+        <div class="exp-company-stamp">Merkle</div>
+      </div>
+      <div class="exp-content">
+        <div class="exp-role">Data Scientist</div>
+        <div class="exp-company-label">Merkle (Dentsu)</div>
+        <ul class="exp-bullets">
+          <li>Automated anomaly detection on 2.5TB of web analytics data using time series forecasting — reduced detection lag from hours to minutes.</li>
+          <li>Delivered 7+ Tableau dashboards powered by time series forecasting and NLP text summarization for advertisement and marketing clients.</li>
+          <li>Designed Airflow data pipelines integrating unstructured data from 20+ systems and resolving data quality issues.</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="tag">Anomaly Detection</span>
+          <span class="tag">Time Series</span>
+          <span class="tag">Airflow</span>
+          <span class="tag">Tableau</span>
+          <span class="tag">Python</span>
+          <span class="tag">SQL</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT I DO -->
+  <section id="what">
+    <div class="section-label">What I Do</div>
+    <div class="what-grid">
+      <div class="what-card fade-in">
+        <div class="what-num">Product Data Science</div>
+        <h3>I find out why your metrics are moving — and what to do about it</h3>
+        <p>I turn user behavior data into product decisions. From designing A/B tests that surface real signal to building models that explain churn, engagement, and retention — I work at the intersection of data and product thinking, not just data pipelines.</p>
+      </div>
+      <div class="what-card fade-in">
+        <div class="what-num">LLMs &amp; Production ML</div>
+        <h3>I take AI from prototype to something users actually rely on</h3>
+        <p>I've led LLM selection for a live enterprise system, owned knowledge base architecture in production, and built agentic workflows end to end. I understand the gap between a model that works in a notebook and one that holds up at scale.</p>
+      </div>
+      <div class="what-card fade-in">
+        <div class="what-num">Responsible AI</div>
+        <h3>I make sure your models don't fail the people they affect</h3>
+        <p>I audit production ML for bias, disparate impact, and failure modes that hurt users and create risk. Using tools like SHAP and Fairlearn, I surface what models can't explain — and I've reviewed fraud and employment models and sent them back when they didn't meet the bar, before they shipped.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label">Projects</div>
+    <h2 class="section-title fade-in">Things I've<br><em>Built.</em></h2>
+
+    <div class="projects-featured">
+      <div class="project-card fade-in">
+        <span class="project-badge">Featured</span>
+        <div class="project-num">01</div>
+        <h3>Enterprise RAG Chatbot &amp; LLM Selection</h3>
+        <p>Led end-to-end LLM evaluation and selection for a production RAG-based chatbot at Walmart. Designed knowledge base architecture, evaluated retrieval quality across multiple LLM candidates, and own the system serving thousands of internal users.</p>
+        <div class="project-tags">
+          <span class="tag">RAG</span>
+          <span class="tag">LangChain</span>
+          <span class="tag">LLM Evaluation</span>
+          <span class="tag">Production</span>
+        </div>
+        <div class="project-links"><span class="project-link-muted">Internal Project</span></div>
+      </div>
+
+      <div class="project-card fade-in">
+        <span class="project-badge">Featured</span>
+        <div class="project-num">02</div>
+        <h3>AI Fairness Testing Framework</h3>
+        <p>Designed and implemented a rigorous fairness testing suite for production ML models across fraud detection and employment use cases. Used Fairlearn and SHAP to surface disparate impact — findings resulted in models being sent back for remediation.</p>
+        <div class="project-tags">
+          <span class="tag">Fairlearn</span>
+          <span class="tag">SHAP</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">AI Ethics</span>
+        </div>
+        <div class="project-links"><span class="project-link-muted">Internal Project</span></div>
+      </div>
+
+      <div class="project-card fade-in">
+        <span class="project-badge">Featured</span>
+        <div class="project-num">03</div>
+        <h3>LangChain Agentic Workflow</h3>
+        <p>Built an agentic AI system to automate Walmart's internal AI governance intake process — previously handled manually by compliance SMEs. Originally developed at an internal hackathon, then extended and hardened for scale. Routes requests, assesses risk level, processes attachments, and draws from a knowledge base built by AI governance and legal experts. Under review for org-wide adoption across 1M+ associates.</p>
+        <div class="project-tags">
+          <span class="tag">LangChain</span>
+          <span class="tag">Agents</span>
+          <span class="tag">RAG</span>
+          <span class="tag">Python</span>
+        </div>
+        <div class="project-links"><span class="project-link-muted">Internal Project</span></div>
+      </div>
+    </div>
+
+    <div class="projects-toggles">
+      <button class="more-projects-toggle" id="moreToggle" onclick="toggleMore()">
+        <span>More Projects</span>
+        <span class="chevron">↓</span>
+      </button>
+      <button class="publications-toggle" id="pubToggle" onclick="togglePubs()">
+        <span>Publications</span>
+        <span class="chevron">↓</span>
+      </button>
+    </div>
+
+    <div class="projects-more" id="moreProjects">
+      <div class="project-card small fade-in">
+        <div class="project-num">04</div>
+        <h3>NASA Rodent Cell Classifier</h3>
+        <p>Deep learning model to classify rodent cells from spaceflight vs. ground control experiments for NASA's AI4LS research program. Includes XAI layer built with Streamlit for researcher interpretability.</p>
+        <div class="project-tags">
+          <span class="tag">Deep Learning</span>
+          <span class="tag">XAI</span>
+          <span class="tag">AWS</span>
+        </div>
+        <div class="project-links"><span class="project-link-muted">Research Project</span></div>
+      </div>
+      <div class="project-card small fade-in">
+        <div class="project-num">05</div>
+        <h3>Schedulize — Email to Calendar</h3>
+        <p>Automates conversion of itineraries from emails into Google Calendar events using NLP parsing. Solves a real scheduling problem end-to-end.</p>
+        <div class="project-tags">
+          <span class="tag">NLP</span>
+          <span class="tag">Python</span>
+          <span class="tag">Google Calendar API</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/chinhegde/Schedulize-Email-to-Calendar-Converter" target="_blank" class="project-link">
+            <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+      <div class="project-card small fade-in">
+        <div class="project-num">06</div>
+        <h3>Multilingual Image Description Assistant</h3>
+        <p>Streamlit app combining Hugging Face image-to-text, LangChain translation, and text-to-speech to describe images in multiple languages with audio output.</p>
+        <div class="project-tags">
+          <span class="tag">LangChain</span>
+          <span class="tag">Hugging Face</span>
+          <span class="tag">Streamlit</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/chinhegde/Multi-Lingual-Image-Description-Assistant" target="_blank" class="project-link">
+            <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+      <div class="project-card small fade-in">
+        <div class="project-num">07</div>
+        <h3>Finance Analytics with Llama 2</h3>
+        <p>Automated financial tool using Python for forecasting and prompt engineering with Llama 2 for transaction categorization. Interactive Tableau dashboards for spending trends and forecasts.</p>
+        <div class="project-tags">
+          <span class="tag">Llama 2</span>
+          <span class="tag">Python</span>
+          <span class="tag">Tableau</span>
+        </div>
+      </div>
+      <div class="project-card small fade-in">
+        <div class="project-num">08</div>
+        <h3>Anomaly Detection at Scale</h3>
+        <p>Processed 2.5TB of behavioral data at Merkle — reduced detection lag from hours to minutes using time series forecasting.</p>
+        <div class="project-tags">
+          <span class="tag">Anomaly Detection</span>
+          <span class="tag">BigQuery</span>
+          <span class="tag">Python</span>
+        </div>
+      </div>
+      <div class="project-card small fade-in">
+        <div class="project-num">09</div>
+        <h3>Customer Churn Prediction</h3>
+        <p>ML pipeline comparing five algorithms across two datasets. Covers end-to-end feature engineering, model selection, and evaluation — with customer lifetime value analysis to segment high-value groups.</p>
+        <div class="project-tags">
+          <span class="tag">XGBoost</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">Python</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/chinhegde/Customer-Churn-Prediction" target="_blank" class="project-link">
+            <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="publications-grid" id="pubsGrid">
+      <div class="pub-card fade-in">
+        <span class="pub-label">Publication</span>
+        <h3>Vehicle Trajectory Prediction using Generative Adversarial Networks</h3>
+        <p>Built a generative AI system to predict moving vehicle paths for collision avoidance using TensorFlow, YOLOv3, and GANs.</p>
+        <div class="project-tags" style="margin-top:16px;">
+          <span class="tag">GANs</span>
+          <span class="tag">YOLOv3</span>
+          <span class="tag">TensorFlow</span>
+        </div>
+        <a href="#" class="pub-link">Read Paper ↗</a>
+      </div>
+      <div class="pub-card fade-in">
+        <span class="pub-label">Publication</span>
+        <h3>Autonomous Defense Device with IoT and Natural Language Understanding</h3>
+        <p>Developed a safety device for self-defense with an AI voice assistant and automatic SOS location reporting via GPS and NLU.</p>
+        <div class="project-tags" style="margin-top:16px;">
+          <span class="tag">IoT</span>
+          <span class="tag">NLU</span>
+          <span class="tag">GPS</span>
+        </div>
+        <a href="#" class="pub-link">Read Paper ↗</a>
+      </div>
+    </div>
+  </section>
+
   <!-- CONTACT -->
   <section id="contact">
     <div class="section-label">Get In Touch</div>
     <p class="contact-title">Let's<br><em>Talk.</em></p>
-    <p>Open to product DS and generalist DS roles in the Bay Area.<br>Reach out — I'd love to connect.</p>
+    <p>Reach out — I'd love to connect.</p>
     <div class="contact-links">
       <a href="mailto:chinmayilokeshwar.hegde@gmail.com" class="contact-link">Email ↗</a>
       <a href="https://linkedin.com/in/chinmayi-hegde" target="_blank" class="contact-link">LinkedIn ↗</a>
@@ -1037,7 +686,7 @@
   <!-- FOOTER -->
   <footer>
     <p>© 2025 Chinmayi Hegde</p>
-    <p>Designed & built from scratch</p>
+    <p>Designed &amp; built from scratch</p>
   </footer>
 
   <script>
@@ -1056,9 +705,19 @@
       btn.querySelector('span:first-child').textContent =
         btn.classList.contains('open') ? 'Hide Projects' : 'More Projects';
       if (more.classList.contains('open')) {
-        more.querySelectorAll('.fade-in').forEach(el => {
-          setTimeout(() => el.classList.add('visible'), 60);
-        });
+        more.querySelectorAll('.fade-in').forEach(el => setTimeout(() => el.classList.add('visible'), 60));
+      }
+    }
+
+    function togglePubs() {
+      const btn = document.getElementById('pubToggle');
+      const grid = document.getElementById('pubsGrid');
+      btn.classList.toggle('open');
+      grid.classList.toggle('open');
+      btn.querySelector('span:first-child').textContent =
+        btn.classList.contains('open') ? 'Hide Publications' : 'Publications';
+      if (grid.classList.contains('open')) {
+        grid.querySelectorAll('.fade-in').forEach(el => setTimeout(() => el.classList.add('visible'), 60));
       }
     }
 
